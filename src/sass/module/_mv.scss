@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.mv {
+  height: 100vh;
+  width: 100%;
+  min-height: rem(320);
+  position: relative;
+}
+
+.mv__title {
+  z-index: 888;
+  position: absolute;
+  top: 50%;
+  left: 51.6%;
+  transform: translate(-50%, -50%);
+  color: $white;
+}
+
+.mv__title-main {
+  font-family: $third-font-family;
+  font-size: rem(40);
+  letter-spacing: 0.54em;
+  line-height: 1.2;
+  @include mq("md") {
+    font-size: rem(80);
+    line-height: 1.25;
+  }
+}
+
+.mv__title-sub {
+  text-align: center;
+  font-size: rem(20);
+  line-height: 1.66;
+  @include mq("md") {
+    font-size: rem(20);
+    text-align: center;
+  }
+}
+
+.swiper-slide img {
+  height: 100vh;
+  // aspect-ratio: 1440 / 814;
+  object-fit: cover;
+  @include mq("md") {
+    aspect-ratio: 375 / 665;
+  }
+}

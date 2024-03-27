@@ -19,14 +19,24 @@
     <!-- ファビコン -->
     <link rel="”icon”" href="" />
     <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Gotu&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+      defer
+    ></script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
@@ -153,7 +163,27 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="mv js-mainVisual">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/common/top-mv1.jpg" alt="ダミー画像" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/common/top-mv2.jpg" alt="ダミー画像" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/common/top-mv3.jpg" alt="ダミー画像" />
+            </div>
+          </div>
+        </div>
+        <div class="mv__title">
+          <h2 class="mv__title-main">DIVING</h2>
+          <p class="mv__title-sub">into&nbsp;the&nbsp;ocean</p>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
