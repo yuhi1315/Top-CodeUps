@@ -1,0 +1,73 @@
+@use "global" as *;
+
+.campaign-card {
+  box-shadow: 2px 2px 10px 0px #00000040;
+}
+
+.campaign-card__img {
+  aspect-ratio: 280 / 188;
+}
+
+.campaign-card__body {
+  padding: 16px 16px 24px;
+}
+
+.campaign-card__top {
+  padding-bottom: rem(8);
+  border-bottom: 1px solid $green;
+}
+
+.campaign-card__tag {
+  font-size: rem(12);
+  line-height: 1.83;
+  color: $green;
+  border: 1px solid $green;
+  padding: 4px 12px;
+}
+
+.campaign-card__title {
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: rem(4);
+}
+
+.campaign-card__bottom {
+  width: 100%;
+  text-align: center;
+  padding: rem(8) 0 rem(24);
+}
+
+.campaign-card__text {
+  display: inline-block;
+  font-size: rem(14);
+  line-height: 1.7414;
+}
+
+.campaign-card__price {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(8);
+  align-items: center;
+}
+
+.campaign-card__price-normal {
+  font-family: $third-font-family;
+  font-size: rem(20);
+  font-weight: $bold;
+  line-height: 1;
+}
+
+.campaign-card__price-normal span {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+.campaign-card__price-discount {
+  font-family: $third-font-family;
+  font-size: rem(32);
+  font-weight: $bold;
+  line-height: rem(32);
+  margin-left: rem(16);
+  color: $green;
+}
