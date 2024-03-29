@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.blog {
+  position: relative;
+  background: none;
+  height: rem(500);
+  @include mq("md") {
+    background-size: cover;
+    background: url(/../assets/images/common/blog.jpg);
+  }
+}
+
+.blog-cards {
+  margin-top: rem(24);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: rem(40);
+  row-gap: rem(40);
+  @include mq("md") {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: rem(80);
+  }
+}
+
+.blog__button {
+  margin-top: rem(40);
+  width: 100%;
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.blog__icon {
+  position: absolute;
+  width: rem(437);
+  height: rem(201);
+  top: rem(20);
+  left: rem(75);
+}
