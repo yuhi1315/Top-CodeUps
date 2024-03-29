@@ -19,8 +19,7 @@ jQuery(function ($) {
   const mv__swiper = new Swiper(".mv__swiper", {
     loop: true,
     autoplay: {
-      //追記
-      delay: 0, //追記
+      delay: 0,
     },
     speed: 3000,
     pagination: {
@@ -33,36 +32,23 @@ jQuery(function ($) {
     },
   });
   const campaign__swiper = new Swiper(".campaign__swiper", {
-    // loop: true,
-    // loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
     spaceBetween: 24,
     slidesPerView: "1.5",
     speed: 2000,
-    // loopAdditionalSlides: 2,
-    // width: 280,
-
-    // autoplay: {
-    //   delay: 0,
-    //   disableOnInteraction: false,
-    // },
     breakpoints: {
-      //ブレークポイントの設定 小さい順に設定する！！
       768: {
         slidesPerView: 3.5,
         spaceBetween: 40,
-        // width: 1265.5,
-        // },
-        // 1920: {
-        //   slidesPerView: "5",
-        //   spaceBetween: 40,
-        //   width: 1825,
-        // },
       },
-      // 前後の矢印
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 });

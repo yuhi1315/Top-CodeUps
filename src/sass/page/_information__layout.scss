@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.about-us__layout {
+  padding: rem(80) 0;
+  @include mq("md") {
+    padding-top: rem(100);
+    padding-bottom: rem(76);
+  }
+}
