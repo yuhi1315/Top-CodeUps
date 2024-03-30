@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.blog-card {
+  box-shadow: 2px 2px 10px 0px #00000040;
+  padding: 16px 16px 24px;
+  background-color: $white;
+  @include mq("md") {
+    padding: 24px 16px 40px;
+  }
+}
+
+.blog-card__img {
+  aspect-ratio: 280 / 188;
+}
+
+.blog-card__top {
+  padding-bottom: rem(8);
+  border-bottom: 1px solid $green;
+  margin-top: rem(24);
+
+  @include mq("md") {
+    text-align-last: left;
+  }
+}
+
+.blog-card__time {
+  font-size: rem(12);
+  line-height: 1.83;
+  color: $navy;
+}
+
+.blog-card__title {
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.blog-card__bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: rem(16);
+}
+
+.blog-card__text {
+  display: inline-block;
+  font-size: rem(16);
+  line-height: 1.5;
+  text-align: left;
+}

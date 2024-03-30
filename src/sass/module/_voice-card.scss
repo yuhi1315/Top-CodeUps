@@ -1,0 +1,112 @@
+@use "global" as *;
+
+.voice {
+}
+
+.voice__inner {
+  position: relative;
+}
+
+.voice__icon-fish {
+  position: absolute;
+  top: 0;
+  left: rem(20);
+  width: rem(301);
+  height: rem(138);
+}
+
+.voice__icon-seahorse {
+  position: absolute;
+  bottom: 0;
+  right: rem(20);
+  width: rem(71);
+  height: rem(162);
+}
+
+.voice-card {
+  box-shadow: 2px 2px 10px 0px #00000040;
+  padding: 16px 16px 24px;
+  background-color: $white;
+  @include mq("md") {
+    padding: 24px 16px 40px;
+  }
+}
+
+.voice-card__top {
+  padding-bottom: rem(8);
+  margin-top: rem(24);
+  display: flex;
+  @include mq("md") {
+    padding-bottom: 0;
+    text-align-last: left;
+  }
+}
+
+.voice-card__info {
+  border-bottom: 1px solid $green;
+  padding-bottom: rem(4);
+  @include mq("md") {
+    width: 56.6%;
+    margin-top: rem(24);
+  }
+}
+
+.voice-card__age {
+  font-size: rem(12);
+  line-height: 1.8333;
+  @include mq("md") {
+    line-height: 1.5;
+  }
+}
+
+.voice-card__tag {
+  display: inline-block;
+  font-size: rem(12);
+  padding: rem(4) rem(12);
+  line-height: 1.8333;
+  color: $green;
+  border: 1px solid $green;
+  @include mq("md") {
+    float: right;
+  }
+}
+
+.voice-card__title {
+  font-weight: 500;
+  font-size: rem(16);
+  line-height: 1.4481;
+  margin-top: rem(4);
+  @include mq("md") {
+    font-size: rem(24);
+    line-height: 1.4479;
+    margin-top: rem(8);
+  }
+}
+
+.voice-card__img {
+  width: 67.67%;
+  margin-left: rem(13);
+  @include mq("md") {
+    width: 36.89%;
+  }
+}
+
+.voice-card__img img {
+  aspect-ratio: 151 / 117;
+}
+
+.voice-card__bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.voice-card__text {
+  display: inline-block;
+  font-size: rem(16);
+  line-height: 1.5;
+  text-align: left;
+}

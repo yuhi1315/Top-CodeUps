@@ -1,29 +1,21 @@
 @use "global" as *;
 
-.blog {
-  position: relative;
-  background: none;
-  @include mq("md") {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background: url(/../assets/images/common/blog.jpg);
-    backgorund-position: 50% 30%;
-  }
+.voice {
 }
 
-.blog-cards {
+.voice-cards {
   margin-top: rem(24);
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   column-gap: rem(40);
   row-gap: rem(40);
   @include mq("md") {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin-top: rem(80);
   }
 }
 
-.blog__button {
+.voice__button {
   margin-top: rem(40);
   width: 100%;
   text-align: center;
@@ -32,7 +24,7 @@
   }
 }
 
-.blog__icon {
+.voice__icon {
   position: absolute;
   width: rem(437);
   height: rem(201);
