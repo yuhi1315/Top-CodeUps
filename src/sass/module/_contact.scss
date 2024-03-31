@@ -1,0 +1,112 @@
+@use "global" as *;
+
+.contact {
+}
+
+.contact__inner {
+  position: relative;
+}
+
+.contact__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: rem(301);
+  height: rem(138);
+}
+
+.contact__container {
+  text-align: center;
+  @include mq("md") {
+    display: flex;
+    padding: rem(80) rem(112) rem(80) rem(50);
+    box-shadow: 2px 2px 10px 0px #00000040;
+  }
+}
+
+.contact__map {
+  @include mq("md") {
+    width: 47.931%;
+    box-sizing: content-box;
+  }
+}
+
+.contact__logo {
+  width: rem(174);
+  height: rem(65);
+  margin: 0 auto;
+}
+
+.contact__bottom {
+  border-top: 1px solid $green;
+  padding-top: rem(16);
+  margin-top: rem(6);
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.contact__address {
+  font-size: rem(16);
+  line-height: 1.5;
+  @include mq("md") {
+    text-align: left;
+  }
+}
+
+.contact__google-map {
+  margin-top: rem(16);
+  @include mq("md") {
+    width: 67.47%;
+    margin-left: rem(21);
+  }
+}
+
+.contact__google-map img {
+  @include mq("md") {
+    aspect-ratio: 273 / 148;
+  }
+}
+
+.contact__message {
+  @include mq("md") {
+    margin-left: rem(81);
+    padding-left: rem(82);
+    border-left: 1px solid $green;
+  }
+}
+
+.price__title {
+  margin-top: rem(40);
+}
+
+.contact__engtitle {
+  font-weight: normal;
+  font-size: rem(80);
+  line-height: 1;
+}
+
+.contact__engtitle::first-letter {
+  color: $green;
+  line-height: 1.5;
+}
+
+.contact__jatitle {
+  font-size: rem(12);
+  line-height: 1.5;
+  color: $green;
+}
+
+.contact__text {
+  margin-top: rem(8);
+  color: $green;
+}
+
+.contact__button {
+  width: 100%;
+  text-align: center;
+  margin-top: rem(40);
+}
+
+.button {
+}
