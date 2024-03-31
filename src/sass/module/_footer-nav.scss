@@ -1,0 +1,84 @@
+@use "global" as *;
+
+.footer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: rem(100) 0;
+
+  // height: 100vh;
+  // background-color: $green;
+}
+
+.footer__inner {
+  display: flex;
+  padding: 0 15px;
+  justify-content: center;
+}
+
+.footer-nav.is-active {
+  display: block;
+}
+
+.footer-nav__container {
+  display: block;
+  margin-left: rem(16);
+  @include mq("md") {
+    display: flex;
+    margin-left: 0;
+  }
+}
+
+.footer-nav__items {
+  color: red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  // min-height: 100vh;
+  width: 100%;
+  @include mq("md") {
+    padding: 0 rem(60);
+  }
+}
+
+.footer-nav__item {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.footer-nav__item a {
+  text-align: left;
+  display: block;
+  padding: rem(12) 0;
+  color: $white;
+  font-size: rem(16);
+  line-height: 1.125;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+.footer-nav__item a:first-child {
+  font-weight: $bold;
+  text-indent: -rem(22);
+  padding-left: rem(22);
+}
+.footer-nav__item a:first-child::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  background-image: url("../../assets/images/common/_ヒトデ.svg");
+  display: inline-block;
+  height: rem(18);
+  width: rem(18);
+  width: 1rem;
+  vertical-align: middle;
+  margin-right: rem(4);
+}
+
+.footer-nav__item a:not(:first-child) {
+  text-indent: -rem(22);
+  padding-left: rem(22);
+}
