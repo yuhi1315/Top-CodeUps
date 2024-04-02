@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: rem(100) 0;
+  padding: rem(96) 0;
   min-height: 100vh;
   max-width: rem(166);
   width: 100%;
@@ -32,7 +32,10 @@
 
 .nav__item {
   width: 100%;
-  margin-top: 28px;
+}
+
+.nav__item:not(:first-child) {
+  margin-top: rem(16);
 }
 
 .nav__item a {
@@ -42,18 +45,18 @@
   color: $white;
   font-size: rem(16);
   line-height: 1.125;
-  letter-spacing: 0.05em;
   position: relative;
 }
 
 .nav__item a:first-child {
   font-weight: $bold;
   text-indent: -rem(22);
-  padding-left: rem(22);
+  padding-left: rem(16);
 }
 .nav__item a:first-child::before {
   position: absolute;
-  left: 0;
+  left: -7;
+  bottom: 16;
   content: "";
   background-image: url("../../assets/images/common/_ヒトデ.svg");
   display: inline-block;
@@ -65,6 +68,6 @@
 }
 
 .nav__item a:not(:first-child) {
-  text-indent: -rem(22);
-  padding-left: rem(22);
+  text-indent: -rem(16);
+  padding-left: rem(16);
 }

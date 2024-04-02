@@ -8,26 +8,25 @@
 }
 
 .about-us__img-container {
-  margin-top: 24px;
   position: relative;
   display: flex;
   justify-content: end;
-  margin-top: 50px;
+  margin-top: rem(55);
   @include mq("md") {
-    margin-top: 120px;
+    margin-top: rem(120);
   }
 }
 
 .about-us__img-left {
   position: absolute;
   z-index: 2;
-  width: 38.21%;
+  width: 37.038%;
   bottom: rem(18);
-  left: rem(-6);
+  left: 0;
   @include mq("md") {
-    width: 36.364%;
-    bottom: rem(56);
-    left: rem(10);
+    width: 37.038%;
+    bottom: rem(50);
+    left: rem(0);
   }
 }
 
@@ -40,9 +39,9 @@
 
 .about-us__img-right {
   z-index: 1;
-  width: 83.882%;
+  width: 81.45%;
   @include mq("md") {
-    width: 80%;
+    width: 81.49%;
   }
 }
 
@@ -57,20 +56,21 @@
   width: 100%;
   margin-top: rem(40);
   @include mq("md") {
+    max-width: rem(840);
     z-index: 10;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 52%;
+    left: 57%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
-    margin-top: rem(40);
+    margin-top: rem(30);
   }
 }
 
 .about-us__catch-wrapper {
   @include mq("md") {
-    width: 36.364%;
+    width: 47.62%;
   }
 }
 
@@ -96,8 +96,9 @@
   line-height: 1.5;
   font-size: rem(16);
   color: $navy;
-  margin-top: rem(16);
+  margin-top: rem(19);
   @include mq("md") {
+    margin-top: 0;
     color: $white;
   }
 }
@@ -105,7 +106,7 @@
 .about-us__button {
   width: 100%;
   text-align: center;
-  margin-top: rem(50);
+  margin-top: rem(24);
   @include mq("md") {
     margin-top: rem(40);
   }
@@ -114,7 +115,7 @@
 .about-us__coral {
   z-index: 10;
   position: absolute;
-  right: rem(-63);
+  right: calc(50% - min(50vw, 650px));
   bottom: rem(-90);
 }
 

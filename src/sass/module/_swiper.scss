@@ -8,14 +8,6 @@
   transform: translate3d(8px, 0, 0);
 }
 
-.campaign__swiper {
-  margin-right: calc(50% - 50vw);
-  margin-top: rem(24);
-  @include mq("md") {
-    margin-top: rem(40);
-  }
-}
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -33,20 +25,46 @@
 }
 
 .swiper-button-next {
-  top: var(--swiper-navigation-top-offset, 5%);
-  left: auto;
+  display: none;
+  top: var(--swiper-navigation-top-offset, 3.3%);
+  right: rem(25);
   border-radius: 50%;
   border: 1px solid $green;
   width: 80px;
   height: 80px;
+  @include mq("md") {
+    display: flex;
+  }
+}
+.swiper-button-next:after {
+  content: "";
+  width: 40px;
+  height: 6px;
+  border-bottom: 1px solid green;
+  border-right: 1px solid green;
+  transform: skew(45deg);
 }
 
 .swiper-button-prev {
-  top: var(--swiper-navigation-top-offset, 5%);
-  right: var(--swiper-navigation-sides-offset, 100px);
+  display: none;
+
+  top: var(--swiper-navigation-top-offset, 3.3%);
+  right: var(--swiper-navigation-sides-offset, rem(185));
   left: auto;
   border-radius: 50%;
   border: 1px solid $green;
   width: 80px;
   height: 80px;
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.swiper-button-prev:after {
+  content: "";
+  width: 40px;
+  height: 6px;
+  border-bottom: 1px solid green;
+  border-left: 1px solid green;
+  transform: skew(-45deg);
 }

@@ -37,13 +37,21 @@ jQuery(function ($) {
       type: "progressbar",
     },
     spaceBetween: 24,
-    slidesPerView: "1.5",
+    slidesPerView: "1.26",
     speed: 2000,
     breakpoints: {
-      768: {
+      765: {
+        slidesPerView: 2.5,
+        spaceBetween: 40,
+      },
+      1440: {
         slidesPerView: 3.5,
         spaceBetween: 40,
       },
+      // 1024: {
+      //   slidesPerView: 2,
+      //   spaceBetween: 40,
+      // },
     },
 
     navigation: {

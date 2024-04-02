@@ -12,11 +12,12 @@
 }
 
 .blog-cards {
-  margin-top: rem(24);
+  margin-top: rem(27);
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   column-gap: rem(40);
   row-gap: rem(40);
+  margin: 0 rem(6);
   @include mq("md") {
     grid-template-columns: repeat(3, 1fr);
     margin-top: rem(80);

@@ -18,9 +18,7 @@
 .campaign-card__top {
   padding-bottom: rem(8);
   border-bottom: 1px solid $green;
-  @include mq("md") {
-    text-align-last: left;
-  }
+  text-align: left;
 }
 
 .campaign-card__tag {
@@ -47,7 +45,10 @@
 .campaign-card__bottom {
   width: 100%;
   text-align: center;
-  padding: rem(8) 0 rem(24);
+  padding: rem(8) 0 0;
+  @include mq("md") {
+    padding: rem(16) rem(20) 0;
+  }
 }
 
 .campaign-card__text {
@@ -55,7 +56,7 @@
   font-size: rem(14);
   line-height: 1.7414;
   @include mq("md") {
-    margin-left: rem(16);
+    font-size: rem(16);
   }
 }
 

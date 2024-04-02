@@ -1,10 +1,12 @@
 @use "global" as *;
 
 .information {
+  background-color: $bg-green;
 }
 
 .information__container {
   @include mq("md") {
+    margin-top: rem(10);
     display: flex;
     align-items: center;
   }
@@ -12,7 +14,7 @@
 
 .information__img {
   position: relative;
-  margin-top: rem(24);
+  margin-top: rem(28);
 }
 
 .color {
@@ -30,10 +32,11 @@
 }
 
 .information__content {
-  margin-top: rem(24);
+  margin-top: rem(28);
   @include mq("md") {
     margin-left: rem(48);
     width: 91.112%;
+    margin-top: rem(35);
   }
 }
 
@@ -41,12 +44,14 @@
   font-size: rem(20);
   line-height: 1.2;
   font-weight: $bold;
-  padding-bottom: rem(4);
   border-bottom: 1px solid $green;
+  @include mq("md") {
+    font-size: rem(24);
+  }
 }
 
 .information__message {
-  margin-top: rem(8);
+  margin-top: rem(10);
   font-size: rem(16);
   line-height: 1.5;
 }

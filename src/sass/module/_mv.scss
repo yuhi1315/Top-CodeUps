@@ -10,10 +10,14 @@
 .mv__title {
   z-index: 888;
   position: absolute;
+  left: 53%;
   top: 50%;
-  left: 51.6%;
   transform: translate(-50%, -50%);
   color: $white;
+  letter-spacing: rem(1.5);
+  @include mq("md") {
+    left: 51.7%;
+  }
 }
 
 .mv__title-main {

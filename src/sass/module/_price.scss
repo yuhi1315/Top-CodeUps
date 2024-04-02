@@ -20,12 +20,14 @@
   @include mq("md") {
     flex-direction: row-reverse;
     display: flex;
+    margin-top: rem(40);
   }
 }
 
 .price__img {
-  margin-top: rem(24);
+  margin-top: rem(28);
   @include mq("md") {
+    margin-top: 0;
     width: 45.556%;
     margin-left: rem(93);
   }
@@ -41,17 +43,21 @@
 }
 
 .price__list {
+  margin-top: rem(43);
   @include mq("md") {
     width: 45.556%;
+    margin-top: 0;
   }
 }
 
-.price__item {
-  margin-top: rem(40);
+.price__item:not(:first-child) {
+  margin-top: rem(37);
+  @include mq("md") {
+    margin-top: rem(45);
+  }
 }
 
-.price__title {
-  padding-bottom: rem(4);
+.price__name {
   border-bottom: 1px solid $green;
   font-weight: $bold;
 }
@@ -59,12 +65,19 @@
 .price__info {
   display: flex;
   justify-content: space-between;
-  margin-top: rem(8);
+  margin-top: rem(10);
+  @include mq("md") {
+    margin-top: rem(8);
+  }
 }
 
 .plice__cource {
   font-size: rem(14);
   line-height: 1.7142;
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: 1.5;
+  }
 }
 
 .price__number {
@@ -75,7 +88,7 @@
 .price__button {
   width: 100%;
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(32);
   @include mq("md") {
     margin-top: rem(80);
   }

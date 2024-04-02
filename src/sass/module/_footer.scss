@@ -3,3 +3,29 @@
 footer {
   background-color: $green;
 }
+
+// .fotter__inner {
+//   max-width: rem(1060);
+//   padding: $padding-pc;
+//   width: 100%;
+//   margin: 0 auto;
+// }
+
+.footer__top {
+  display: flex;
+}
+
+.fotter__logo {
+  width: rem(200);
+  height: rem(75);
+}
+
+.footer__logo {
+}
+
+.footer__sns {
+  width: rem(32);
+  height: rem(32);
+  filter: blur(none);
+  display: flex;
+}
