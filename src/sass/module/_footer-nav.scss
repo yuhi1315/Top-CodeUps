@@ -1,20 +1,5 @@
 @use "global" as *;
 
-.footer {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  padding: rem(100) 0;
-}
-
-.footer__inner {
-  display: flex;
-  justify-content: center;
-}
-
 .footer-nav.is-active {
   display: block;
 }

@@ -4,6 +4,11 @@ footer {
   background-color: $green;
 }
 
+.footer__list {
+  display: flex;
+  justify-content: center;
+}
+
 .footer__top {
   @include mq("md") {
     display: flex;
@@ -11,7 +16,7 @@ footer {
   }
 }
 
-.fotter__logo {
+.footer__logo {
   width: rem(200);
   height: rem(75);
 }

@@ -68,10 +68,6 @@ jQuery(function ($) {
         slidesPerView: 3.5,
         spaceBetween: 40,
       },
-      // 1024: {
-      //   slidesPerView: 2,
-      //   spaceBetween: 40,
-      // },
     },
 
     navigation: {
