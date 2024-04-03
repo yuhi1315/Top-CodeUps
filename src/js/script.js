@@ -1,5 +1,25 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
+  $(function () {
+    const pageTop = $(".js-page-top");
+    pageTop.hide();
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 20) {
+        pageTop.fadeIn();
+      } else {
+        pageTop.fadeOut();
+      }
+    });
+    pageTop.click(function () {
+      $("body, html").animate(
+        {
+          scrollTop: 0,
+        },
+        300
+      );
+      return false;
+    });
+  });
 
   $(function () {
     $(".js-hamburger,.js-sp-nav").click(function () {

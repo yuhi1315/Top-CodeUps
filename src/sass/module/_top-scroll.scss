@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.top-scroll {
+  position: fixed;
+  z-index: 9000;
+  right: 40px;
+  bottom: 121px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid $green;
+  width: 80px;
+  height: 80px;
+  transform: rotate(269deg);
+
+  @include mq("md") {
+    right: 15px;
+    bottom: 85px;
+  }
+}
+
+.top-scroll::before {
+  position: absolute;
+  content: "";
+  width: rem(40);
+  height: rem(6);
+  border-bottom: solid 1px $green;
+  border-right: solid 1px $green;
+  transform: skew(45deg);
+  top: 35px;
+  left: 20px;
+}
