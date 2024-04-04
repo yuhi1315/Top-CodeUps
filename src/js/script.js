@@ -104,10 +104,10 @@ jQuery(function ($) {
   });
 
   //要素の取得とスピードの設定
-  var box = $(".information__img"),
+  var box = $(".js-imgBg-change"),
     speed = 700;
 
-  //.colorboxの付いた全ての要素に対して下記の処理を行う
+  //画像のスクロールアニメーション
   box.each(function () {
     $(this).append('<div class="color"></div>');
     var color = $(this).find($(".color")),

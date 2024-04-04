@@ -83,6 +83,7 @@
 }
 
 .voice-card__img {
+  position: relative;
   width: 67.67%;
   margin-left: rem(13);
   @include mq("md") {
