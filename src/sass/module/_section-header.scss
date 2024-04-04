@@ -10,6 +10,9 @@
   text-align: center;
   font-weight: normal;
   color: $navy;
+  &--white {
+    color: $white;
+  }
   @include mq("md") {
     line-height: 1;
     font-size: rem(40);
@@ -17,6 +20,13 @@
 }
 .section-header__engtitle::first-letter {
   color: $green;
+  &--white {
+    color: $white;
+  }
+}
+
+.section-header__engtitle--white:first-letter {
+  color: $white;
 }
 
 .section-header__jatitle {
@@ -25,6 +35,9 @@
   text-align: center;
   color: $green;
   margin-top: rem(4);
+  &--white {
+    color: $white;
+  }
   @include mq("md") {
     margin-top: rem(8);
   }

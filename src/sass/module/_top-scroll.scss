@@ -3,29 +3,37 @@
 .top-scroll {
   position: fixed;
   z-index: 9000;
-  right: 40px;
+  right: 18px;
   bottom: 121px;
   cursor: pointer;
   border-radius: 50%;
   border: 1px solid $green;
-  width: 80px;
-  height: 80px;
+  width: 48px;
+  height: 48px;
   transform: rotate(269deg);
 
   @include mq("md") {
     right: 15px;
     bottom: 85px;
+    width: 80px;
+    height: 80px;
   }
 }
 
 .top-scroll::before {
   position: absolute;
   content: "";
-  width: rem(40);
+  width: rem(28);
   height: rem(6);
   border-bottom: solid 1px $green;
   border-right: solid 1px $green;
   transform: skew(45deg);
-  top: 35px;
-  left: 20px;
+  top: 19px;
+  left: 7px;
+  @include mq("md") {
+    width: rem(40);
+    height: rem(6);
+    top: 35px;
+    left: 20px;
+  }
 }

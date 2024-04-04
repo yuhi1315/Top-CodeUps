@@ -6,7 +6,15 @@
 
 .footer-nav__container {
   display: block;
-  margin-left: rem(16);
+  @include mq("md") {
+    display: flex;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.footer-nav__container:nth-child(2) {
+  margin-left: rem(27);
   @include mq("md") {
     display: flex;
     margin-left: 0;
@@ -14,20 +22,36 @@
 }
 
 .footer-nav__items {
+  margin-top: rem(30);
   color: red;
   display: flex;
   align-items: center;
   flex-direction: column;
-  // min-height: 100vh;
   width: 100%;
   @include mq("md") {
-    padding: 0 rem(60);
+    margin-top: 0;
+  }
+}
+
+.footer-nav__items:nth-child(2) {
+  margin-top: rem(17);
+  @include mq("md") {
+    margin-top: 0;
   }
 }
 
 .footer-nav__item {
   width: 100%;
-  margin-top: 28px;
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.footer-nav__item:not(:first-child) {
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: 0;
+  }
 }
 
 .footer-nav__item a {
@@ -50,7 +74,7 @@
   position: absolute;
   left: 0;
   content: "";
-  background-image: url("../../assets/images/common/_ヒトデ.svg");
+  background-image: url("../../assets/images/common/starfish.svg");
   display: inline-block;
   height: rem(18);
   width: rem(18);

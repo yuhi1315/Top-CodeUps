@@ -5,13 +5,12 @@
   display: inline-block;
   font-size: rem(14);
   font-weight: $bold;
-  color: $green;
+  color: $white;
   width: rem(200);
-  text-transform: uppercase;
-  border-radius: 1px;
+  border-radius: rem(1);
   line-height: 1;
   padding: rem(18) 0;
-  background-color: $white;
+  background-color: $green;
   box-shadow: 4px 4px 0 -1px white, 4px 4px 0 0 $green;
   position: relative;
   overflow: hidden;
@@ -21,16 +20,17 @@
 
 .button span {
   position: absolute;
+  top: rem(20);
   width: rem(40);
   height: rem(6);
-  border-bottom: 1px solid $green;
-  border-right: 1px solid $green;
+  border-bottom: 1px solid $white;
+  border-right: 1px solid $white;
   transform: skew(45deg);
 }
 
 .button::after {
   content: "";
-  background: $green;
+  background: $white;
   position: absolute;
   top: 0;
   left: 0;
@@ -43,10 +43,10 @@
 }
 
 .button:hover {
-  color: #fff;
+  color: $green;
   span {
-    border-bottom: 1px solid $white;
-    border-right: 1px solid $white;
+    border-bottom: 1px solid $green;
+    border-right: 1px solid $green;
   }
 }
 

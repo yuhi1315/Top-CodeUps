@@ -6,7 +6,10 @@ footer {
 
 .footer__list {
   display: flex;
-  justify-content: center;
+  @include mq("md") {
+    margin-top: 0;
+    justify-content: center;
+  }
 }
 
 .footer__top {
@@ -17,8 +20,12 @@ footer {
 }
 
 .footer__logo {
-  width: rem(200);
-  height: rem(75);
+  width: rem(120);
+  height: rem(45);
+  @include mq("md") {
+    width: rem(200);
+    height: rem(75);
+  }
 }
 
 .footer__sns {
@@ -26,7 +33,9 @@ footer {
   height: rem(24);
   filter: blur(none);
   display: flex;
+  margin-top: rem(12);
   @include mq("md") {
+    margin-top: 0;
     width: rem(32);
     height: rem(32);
   }
