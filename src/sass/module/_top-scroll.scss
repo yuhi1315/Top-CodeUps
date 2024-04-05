@@ -1,10 +1,12 @@
 @use "global" as *;
 
 .top-scroll {
+  display: none; /*最初は隠す*/
+
   position: fixed;
   z-index: 9000;
-  right: 18px;
-  bottom: 121px;
+  right: 12px;
+  bottom: 10px;
   cursor: pointer;
   border-radius: 50%;
   border: 1px solid $green;

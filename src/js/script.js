@@ -9,6 +9,29 @@ jQuery(function ($) {
       } else {
         pageTop.fadeOut();
       }
+      const scrollHeight = $(document).height(); /*ページ全体の高さ*/
+      const scrollPosition =
+        $(window).height() +
+        $(window).scrollTop(); /*ページの一番上からスクロールされた距離*/
+      const footerPaddingTop = parseInt($("footer").css("padding-top"));
+      const footerPaddingBottom = parseInt($("footer").css("padding-bottom"));
+      const footHeight =
+        $("footer").height() +
+        footerPaddingTop +
+        footerPaddingBottom; /*フッターの高さ*/
+
+      if (scrollHeight - scrollPosition <= footHeight) {
+        console.log(footHeight);
+        $(".top-scroll").css({
+          position: "absolute",
+          bottom: 10 + footHeight,
+        });
+      } else {
+        $(".top-scroll").css({
+          position: "fixed",
+          bottom: "10px",
+        });
+      }
     });
     pageTop.click(function () {
       $("body, html").animate(
@@ -52,6 +75,8 @@ jQuery(function ($) {
     },
   });
   const campaign__swiper = new Swiper(".campaign__swiper", {
+    loop: true,
+    loopAdditionalSlides: 2,
     pagination: {
       el: ".swiper-pagination",
       type: "progressbar",
@@ -59,6 +84,10 @@ jQuery(function ($) {
     spaceBetween: 24,
     slidesPerView: "1.26",
     speed: 2000,
+    autoplay: {
+      delay: 0,
+      // disableOnInteraction: false,
+    },
     breakpoints: {
       765: {
         slidesPerView: 2.5,
