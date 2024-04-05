@@ -11,7 +11,9 @@
   font-weight: normal;
   color: $navy;
   &--white {
-    color: $white;
+    @include mq("md") {
+      color: $white;
+    }
   }
   @include mq("md") {
     line-height: 1;
@@ -21,12 +23,16 @@
 .section-header__engtitle::first-letter {
   color: $green;
   &--white {
-    color: $white;
+    @include mq("md") {
+      color: $white;
+    }
   }
 }
 
 .section-header__engtitle--white:first-letter {
-  color: $white;
+  @include mq("md") {
+    color: $white;
+  }
 }
 
 .section-header__jatitle {
@@ -36,7 +42,9 @@
   color: $green;
   margin-top: rem(4);
   &--white {
-    color: $white;
+    @include mq("md") {
+      color: $white;
+    }
   }
   @include mq("md") {
     margin-top: rem(8);

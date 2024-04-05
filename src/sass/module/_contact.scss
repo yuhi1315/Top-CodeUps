@@ -9,11 +9,16 @@
 
 .contact__icon {
   position: absolute;
-  top: rem(-40);
-  right: calc(50% - min(50vw, rem(650)));
-  width: rem(301);
-  height: rem(138);
+  top: rem(-17);
+  right: rem(17);
+  width: rem(109);
+  height: rem(50);
   transform: scale(-1, 1);
+  @include mq("md") {
+    width: rem(301);
+    height: rem(138);
+    right: calc(50% - min(50vw, rem(650)));
+  }
 }
 
 .contact__container {
@@ -38,12 +43,11 @@
 .contact__logo {
   width: rem(174);
   height: rem(65);
+  margin: 0 auto;
   @include mq("md") {
     width: rem(200);
     height: rem(75);
   }
-
-  margin: 0 auto;
 }
 
 .contact__bottom {
