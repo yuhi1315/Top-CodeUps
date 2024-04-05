@@ -18,9 +18,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 rem(15);
   @include mq("md") {
-    padding: 0 40px;
+    padding: 0 rem(40);
   }
 }
 
@@ -59,7 +59,7 @@
 }
 
 .header__item a {
-  padding: 0 18px;
+  padding: 0 rem(18);
   position: relative;
 }
 
@@ -71,7 +71,7 @@
   left: 10%;
   /*線の形状*/
   width: 80%;
-  height: 2px;
+  height: rem(2);
   background: #0481a2;
   /*アニメーションの指定*/
   transition: all 0.3s;
@@ -85,19 +85,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: rem(18);
   line-height: 1.2;
 }
 
 .header__link.header__link--contact {
   height: inherit;
   background-color: $black;
-  padding: 0 24px;
+  padding: 0 rem(24);
   transition: 0.3s background-color;
   color: $white;
-  width: 109px;
+  width: rem(109);
   transition: 0.3s;
-  margin-left: 30px;
+  margin-left: rem(30);
   &:hover {
     transition: 0.3s;
   }

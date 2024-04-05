@@ -11,11 +11,11 @@
   line-height: 1;
   padding: rem(18) 0;
   background-color: $green;
-  box-shadow: 4px 4px 0 -1px white, 4px 4px 0 0 $green;
+  box-shadow: rem(4) rem(4) 0 rem(-1) white, rem(4) rem(4) 0 0 $green;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  border: 1px solid $green;
+  border: rem(1) solid $green;
 }
 
 .button span {
@@ -23,8 +23,8 @@
   top: rem(20);
   width: rem(40);
   height: rem(6);
-  border-bottom: 1px solid $white;
-  border-right: 1px solid $white;
+  border-bottom: rem(1) solid $white;
+  border-right: rem(1) solid $white;
   transform: skew(45deg);
 }
 
@@ -45,8 +45,8 @@
 .button:hover {
   color: $green;
   span {
-    border-bottom: 1px solid $green;
-    border-right: 1px solid $green;
+    border-bottom: rem(1) solid $green;
+    border-right: rem(1) solid $green;
   }
 }
 

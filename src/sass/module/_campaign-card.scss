@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .campaign-card {
-  box-shadow: 2px 2px 10px 0px #00000040;
+  box-shadow: rem(2) rem(2) rem(10) 0 #00000040;
 }
 
 .campaign-card__img {
@@ -9,15 +9,15 @@
 }
 
 .campaign-card__body {
-  padding: 16px 16px 24px;
+  padding: rem(16) rem(16) rem(24);
   @include mq("md") {
-    padding: 24px 16px 40px;
+    padding: rem(24) rem(16) rem(40);
   }
 }
 
 .campaign-card__top {
   padding-bottom: rem(8);
-  border-bottom: 1px solid $green;
+  border-bottom: rem(1) solid $green;
   text-align: left;
 }
 
@@ -25,7 +25,7 @@
   font-size: rem(12);
   line-height: 1.83;
   color: $green;
-  border: 1px solid $green;
+  border: rem(1) solid $green;
   padding: rem(4) rem(12);
   @include mq("md") {
     padding: rem(6) rem(16);

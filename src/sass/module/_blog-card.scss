@@ -1,11 +1,11 @@
 @use "global" as *;
 
 .blog-card {
-  box-shadow: 2px 2px 10px 0px #00000040;
-  padding: 16px 16px 22px;
+  box-shadow: rem(2) rem(2) rem(10) 0 #00000040;
+  padding: rem(16) rem(16) rem(22);
   background-color: $white;
   @include mq("md") {
-    padding: 17px 16px 23px;
+    padding: rem(17) rem(16) rem(23);
   }
 }
 
@@ -14,7 +14,7 @@
 }
 
 .blog-card__top {
-  border-bottom: 1px solid $green;
+  border-bottom: rem(1) solid $green;
   margin-top: rem(20);
   @include mq("md") {
     text-align-last: left;

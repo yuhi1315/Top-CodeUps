@@ -17,7 +17,7 @@
 
 .voice__icon-seahorse {
   position: absolute;
-  bottom: -71px;
+  bottom: rem(-71);
   right: rem(20);
   width: rem(71);
   height: rem(162);
@@ -43,7 +43,7 @@
 }
 
 .voice-card__info {
-  border-bottom: 1px solid $green;
+  border-bottom: rem(1) solid $green;
   max-width: rem(149);
   width: 100%;
   @include mq("md") {
@@ -64,7 +64,7 @@
   padding: rem(4) rem(12);
   line-height: 1.5;
   color: $green;
-  border: 1px solid $green;
+  border: rem(1) solid $green;
   @include mq("md") {
     float: right;
   }

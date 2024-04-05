@@ -10,8 +10,8 @@
 
 .price__icon {
   position: absolute;
-  bottom: -41px;
-  left: -55px;
+  bottom: rem(-41);
+  left: rem(-55);
   width: rem(437);
   height: rem(201);
   transform: scale(-1, 1);
@@ -60,7 +60,7 @@
 }
 
 .price__name {
-  border-bottom: 1px solid $green;
+  border-bottom: rem(1) solid $green;
   font-weight: $bold;
 }
 

@@ -44,7 +44,7 @@
   font-size: rem(20);
   line-height: 1.2;
   font-weight: $bold;
-  border-bottom: 1px solid $green;
+  border-bottom: rem(1) solid $green;
   @include mq("md") {
     font-size: rem(24);
   }
@@ -57,7 +57,7 @@
 }
 
 .information__button {
-  margin-top: 40px;
+  margin-top: rem(40);
   width: 100%;
   text-align: center;
 }

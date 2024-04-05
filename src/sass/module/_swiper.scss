@@ -5,17 +5,17 @@
 }
 
 .swiper-wrapper {
-  transform: translate3d(8px, 0, 0);
+  transform: translate3d(rem(8), 0, 0);
 }
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: rem(18);
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1px;
+  padding-bottom: rem(1);
 }
 
 .swiper-slide img {
@@ -30,19 +30,19 @@
   top: var(--swiper-navigation-top-offset, 3.3%);
   right: rem(25);
   border-radius: 50%;
-  border: 1px solid $green;
-  width: 80px;
-  height: 80px;
+  border: rem(1) solid $green;
+  width: rem(80);
+  height: rem(80);
   @include mq("md") {
     display: flex;
   }
 }
 .swiper-button-next:after {
   content: "";
-  width: 40px;
-  height: 6px;
-  border-bottom: 1px solid green;
-  border-right: 1px solid green;
+  width: rem(40);
+  height: rem(6);
+  border-bottom: rem(1) solid green;
+  border-right: rem(1) solid green;
   transform: skew(45deg);
 }
 
@@ -53,9 +53,9 @@
   right: var(--swiper-navigation-sides-offset, rem(185));
   left: auto;
   border-radius: 50%;
-  border: 1px solid $green;
-  width: 80px;
-  height: 80px;
+  border: rem(1) solid $green;
+  width: rem(80);
+  height: rem(80);
   @include mq("md") {
     display: flex;
   }
@@ -63,9 +63,9 @@
 
 .swiper-button-prev:after {
   content: "";
-  width: 40px;
-  height: 6px;
-  border-bottom: 1px solid green;
-  border-left: 1px solid green;
+  width: rem(40);
+  height: rem(6);
+  border-bottom: rem(1) solid green;
+  border-left: rem(1) solid green;
   transform: skew(-45deg);
 }

@@ -115,7 +115,7 @@
 .about-us__coral {
   z-index: 10;
   position: absolute;
-  right: calc(50% - min(50vw, 650px));
+  right: calc(50% - min(50vw, rem(650)));
   bottom: rem(-90);
 }
 
