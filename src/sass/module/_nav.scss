@@ -9,6 +9,7 @@
   width: 100%;
   height: 100vh;
   background-color: $green;
+  overflow: scroll;
 }
 .nav__inner {
   display: flex;
