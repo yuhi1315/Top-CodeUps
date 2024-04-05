@@ -16,11 +16,13 @@
   overflow: hidden;
   z-index: 1;
   border: rem(1) solid $green;
+  padding-right: rem(50);
 }
 
 .button span {
   position: absolute;
   top: rem(20);
+  right: rem(43);
   width: rem(40);
   height: rem(6);
   border-bottom: rem(1) solid $white;

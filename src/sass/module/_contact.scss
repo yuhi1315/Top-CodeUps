@@ -9,7 +9,7 @@
 
 .contact__icon {
   position: absolute;
-  top: rem(-17);
+  top: rem(-25);
   right: rem(17);
   width: rem(109);
   height: rem(50);
@@ -17,7 +17,8 @@
   @include mq("md") {
     width: rem(301);
     height: rem(138);
-    right: calc(50% - min(50vw, rem(650)));
+    top: rem(-45);
+    right: calc(50% - min(50vw, rem(670)));
   }
 }
 
@@ -90,7 +91,7 @@
 }
 
 .contact__message {
-  margin-top: rem(42);
+  margin-top: rem(45);
   @include mq("md") {
     margin-top: 0;
     margin-left: rem(81);
@@ -106,7 +107,7 @@
 .contact__engtitle {
   font-weight: normal;
   font-size: rem(80);
-  line-height: 1;
+  line-height: 0.9;
 }
 
 .contact__engtitle::first-letter {

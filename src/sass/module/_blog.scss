@@ -33,7 +33,7 @@
   margin: 0 rem(6);
   @include mq("md") {
     grid-template-columns: repeat(3, 1fr);
-    margin-top: rem(80);
+    margin: rem(80) 0 0;
   }
 }
 

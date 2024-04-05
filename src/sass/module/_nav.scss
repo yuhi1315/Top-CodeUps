@@ -31,6 +31,10 @@
   width: 100%;
 }
 
+.nav__items:nth-child(2) {
+  margin-left: rem(7);
+}
+
 .nav__item {
   width: 100%;
 }
@@ -56,10 +60,10 @@
 }
 .nav__item a:first-child::before {
   position: absolute;
-  left: -7;
+  left: -5px;
   bottom: 16;
   content: "";
-  background-image: url("../../assets/images/common/_ヒトデ.svg");
+  background-image: url("../../assets/images/common/starfish.svg");
   display: inline-block;
   height: rem(18);
   width: rem(18);

@@ -17,8 +17,8 @@
 
 .voice__icon-seahorse {
   position: absolute;
-  bottom: rem(-71);
-  right: rem(20);
+  bottom: rem(-64);
+  right: rem(26);
   width: rem(71);
   height: rem(162);
 }
@@ -42,14 +42,22 @@
   }
 }
 
+.voice-card__info-wrapper {
+  @include mq("md") {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+}
+
 .voice-card__info {
   border-bottom: rem(1) solid $green;
   max-width: rem(149);
   width: 100%;
   @include mq("md") {
     max-width: 100%;
-    width: 56.6%;
-    margin-top: rem(24);
+    width: 58.48%;
+    margin-top: rem(27);
   }
 }
 
@@ -67,6 +75,7 @@
   border: rem(1) solid $green;
   @include mq("md") {
     float: right;
+    padding: rem(6) rem(16);
   }
 }
 
@@ -78,7 +87,7 @@
   @include mq("md") {
     font-size: rem(24);
     line-height: 1.4479;
-    margin-top: rem(8);
+    margin-top: rem(14);
   }
 }
 
@@ -88,17 +97,21 @@
   margin-left: rem(13);
   @include mq("md") {
     width: 38.2%;
+    margin-left: rem(4);
   }
 }
 
 .voice-card__img img {
   aspect-ratio: 151 / 117;
+  @include mq("md") {
+    margin-left: rem(12);
+  }
 }
 
 .voice-card__bottom {
   width: 100%;
   text-align: center;
-  margin-top: rem(11);
+  margin-top: rem(16);
   @include mq("md") {
     margin-top: rem(40);
   }

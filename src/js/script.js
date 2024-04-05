@@ -24,7 +24,7 @@ jQuery(function ($) {
         console.log(footHeight);
         $(".top-scroll").css({
           position: "absolute",
-          bottom: 10 + footHeight,
+          bottom: 15 + footHeight,
         });
       } else {
         $(".top-scroll").css({
@@ -86,7 +86,6 @@ jQuery(function ($) {
     speed: 2000,
     autoplay: {
       delay: 0,
-      // disableOnInteraction: false,
     },
     breakpoints: {
       765: {
