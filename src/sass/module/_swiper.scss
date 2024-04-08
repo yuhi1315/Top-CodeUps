@@ -4,6 +4,10 @@
   height: 100%;
 }
 
+.swiper-wrapper {
+  height: 100%;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: rem(18);
@@ -12,6 +16,12 @@
   justify-content: center;
   align-items: center;
   padding-bottom: rem(1);
+  height: 100%;
+}
+
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+  height: 100%;
 }
 
 .swiper-slide img {
