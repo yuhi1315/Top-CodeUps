@@ -9,8 +9,16 @@
   }
 }
 
+.blog-card:hover {
+  opacity: 0.9;
+}
+
 .blog-card__img {
-  aspect-ratio: 280 / 188;
+  width: 100%;
+}
+
+.blog-card__img img {
+  aspect-ratio: 301 / 201;
 }
 
 .blog-card__top {
