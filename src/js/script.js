@@ -117,6 +117,7 @@ jQuery(function ($) {
     image.css("opacity", "0");
     color.css("width", "0%");
     color.on("inview", function () {
+      console.log("test");
       if (counter == 0) {
         $(this)
           .delay(200)
