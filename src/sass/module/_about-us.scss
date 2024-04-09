@@ -85,6 +85,7 @@
   font-size: rem(40);
   line-height: 1;
   color: $green;
+  font-family: $Gotu;
   @include mq("md") {
     line-height: 1.25;
     font-size: rem(80);

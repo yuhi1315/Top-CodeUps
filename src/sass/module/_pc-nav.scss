@@ -62,17 +62,10 @@
   transform: scale(1, 1);
 }
 
-// .pc-nav__item:first-child a {
-//   padding-left: 0;
-// }
-
-// .pc-nav__item:last-child a {
-//   padding-right: 0;
-// }
-
 .pc-nav__title {
   font-size: rem(18);
   line-height: 1;
+  font-family: $Gotu;
 }
 
 .pc-nav__sub-title {
