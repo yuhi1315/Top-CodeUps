@@ -6,7 +6,7 @@
   @include mq("md") {
     background-size: 100% rem(500);
     background-repeat: no-repeat;
-    background-image: url("/assets/images/common/blog-bg-img.jpg");
+    background-image: url(../images/common/blog-bg-img.jpg);
   }
 }
 

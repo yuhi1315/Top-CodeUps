@@ -4,7 +4,6 @@
  *    - forked from http://github.com/zuk/jquery.inview/
  */
 (function (factory) {
-  console.log("スクロールイベントがトリガーされました");
   if (typeof define == "function" && define.amd) {
     // AMD
     define(["jquery"], factory);

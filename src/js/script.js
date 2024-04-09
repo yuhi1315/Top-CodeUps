@@ -21,7 +21,6 @@ jQuery(function ($) {
         footerPaddingBottom; /*フッターの高さ*/
 
       if (scrollHeight - scrollPosition <= footHeight) {
-        console.log(footHeight);
         $(".top-scroll").css({
           position: "absolute",
           bottom: 15 + footHeight,
@@ -83,7 +82,7 @@ jQuery(function ($) {
     },
     spaceBetween: 24,
     slidesPerView: "1.26",
-    speed: 2000,
+    speed: 4000,
     autoplay: {
       delay: 0,
     },
@@ -117,7 +116,6 @@ jQuery(function ($) {
     image.css("opacity", "0");
     color.css("width", "0%");
     color.on("inview", function () {
-      console.log("test");
       if (counter == 0) {
         $(this)
           .delay(200)
@@ -146,7 +144,6 @@ jQuery(function ($) {
     color.css("width", "0%");
     //inviewを使って背景色が画面に現れたら処理をする
     color.on("inview", function () {
-      console.log("test");
       if (counter == 0) {
         $(this)
           .delay(200)
