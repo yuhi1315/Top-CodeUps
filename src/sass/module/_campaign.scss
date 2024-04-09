@@ -2,6 +2,9 @@
 
 .campaign__inner {
   position: relative;
+  @include mq("md") {
+    padding-bottom: rem(4);
+  }
 }
 
 .campaign__button {
