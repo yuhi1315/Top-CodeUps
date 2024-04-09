@@ -41,17 +41,17 @@
 
 .pc-nav__item.current a,
 .pc-nav__item a:hover {
-  color: #0481a2;
+  color: $white;
 }
 
 .pc-nav__item a::after {
   content: "";
   position: absolute;
   bottom: rem(20);
-  left: 10%;
-  width: 80%;
+  left: rem(20);
+  width: calc(100% - rem(40));
   height: rem(2);
-  background: #0481a2;
+  background: $white;
   transition: all 0.3s;
   transform: scale(0, 1);
   transform-origin: center top;
@@ -62,13 +62,13 @@
   transform: scale(1, 1);
 }
 
-.pc-nav__item:first-child a {
-  padding-left: 0;
-}
+// .pc-nav__item:first-child a {
+//   padding-left: 0;
+// }
 
-.pc-nav__item:last-child a {
-  padding-right: 0;
-}
+// .pc-nav__item:last-child a {
+//   padding-right: 0;
+// }
 
 .pc-nav__title {
   font-size: rem(18);

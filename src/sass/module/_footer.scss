@@ -31,7 +31,6 @@ footer {
 .footer__sns {
   width: rem(24);
   height: rem(24);
-  filter: blur(none);
   display: flex;
   margin-top: rem(12);
   @include mq("md") {

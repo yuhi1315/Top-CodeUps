@@ -32,6 +32,10 @@
   }
 }
 
+.voice-card__link:hover {
+  opacity: 0.7;
+}
+
 .voice-card__top {
   padding-bottom: rem(4);
   display: flex;

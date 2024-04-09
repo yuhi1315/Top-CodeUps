@@ -22,11 +22,6 @@
 }
 .section-header__engtitle::first-letter {
   color: $green;
-  &--white {
-    @include mq("md") {
-      color: $white;
-    }
-  }
 }
 
 .section-header__engtitle--white:first-letter {

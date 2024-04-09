@@ -61,7 +61,7 @@
 .nav__item a:first-child::before {
   position: absolute;
   left: -5px;
-  bottom: 16;
+  bottom: rem(16);
   content: "";
   background-image: url("/assets/images/common/starfish.svg");
   display: inline-block;
