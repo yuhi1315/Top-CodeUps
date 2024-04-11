@@ -39,12 +39,3 @@
     text-align: center;
   }
 }
-
-.swiper-slide img {
-  height: 100vh;
-  // aspect-ratio: 1440 / 814;
-  object-fit: cover;
-  @include mq("md") {
-    aspect-ratio: 375 / 665;
-  }
-}
