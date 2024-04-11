@@ -8,9 +8,14 @@
   z-index: 1000;
   width: 100%; //画面幅いっぱい
   height: rem(80);
+  transition: all 1s;
   @include mq("md") {
     height: rem(90);
   }
+}
+
+.header.is-active {
+  background-color: $green;
 }
 
 .header__inner {
@@ -65,18 +70,15 @@
 
 .header__item a::after {
   content: "";
-  /*絶対配置で線の位置を決める*/
   position: absolute;
   bottom: 0;
   left: 10%;
-  /*線の形状*/
   width: 80%;
   height: rem(2);
   background: #0481a2;
-  /*アニメーションの指定*/
-  transition: all 0.3s;
-  transform: scale(0, 1); /*X方向0、Y方向1*/
-  transform-origin: center top; /*上部中央基点*/
+  transition: all 1s;
+  transform: scale(0, 1);
+  transform-origin: center top;
 }
 
 .header__link {

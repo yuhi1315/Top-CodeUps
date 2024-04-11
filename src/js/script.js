@@ -46,16 +46,18 @@ jQuery(function ($) {
   $(function () {
     $(".js-hamburger,.js-sp-nav").click(function () {
       $(".js-hamburger").toggleClass("is-active");
-      $(".js-sp-nav").fadeToggle();
+      $(".js-header").toggleClass("is-active");
+      $(".js-sp-nav").fadeToggle(500);
     });
   });
   $(window).resize(function () {
     if (window.matchMedia("(min-width: 768px)").matches) {
       closeDrawer();
+      $(".js-header").removeClass("is-active");
     }
   });
   function closeDrawer() {
-    $(".js-sp-nav").fadeOut();
+    $(".js-sp-nav").fadeOut(500);
     $(".js-hamburger").removeClass("is-active");
   }
   const mv__swiper = new Swiper(".mv__swiper", {
