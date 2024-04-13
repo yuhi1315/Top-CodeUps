@@ -3,7 +3,7 @@
 .nav {
   display: none;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - rem(80));
   background-color: $green;
   overflow: scroll;
 }
@@ -21,7 +21,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
   max-width: rem(166);
   width: 100%;
 }

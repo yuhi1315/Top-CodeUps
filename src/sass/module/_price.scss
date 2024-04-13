@@ -11,7 +11,7 @@
 .price__icon {
   position: absolute;
   bottom: rem(-41);
-  left: rem(-55);
+  left: calc(50% - min(49vw, rem(620)));
   width: rem(437);
   height: rem(201);
   transform: scale(-1, 1);

@@ -3,15 +3,8 @@
 .voice {
 }
 
-.voice-card__link {
-}
-
-.voice-cards {
+.voice__list {
   margin-top: rem(44);
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  column-gap: rem(40);
-  row-gap: rem(40);
   @include mq("md") {
     grid-template-columns: repeat(2, 1fr);
     margin-top: rem(29);

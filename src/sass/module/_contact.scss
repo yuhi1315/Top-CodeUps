@@ -66,6 +66,8 @@
   font-size: rem(16);
   line-height: 1.75;
   font-family: "Noto Sans JP";
+  font-style: normal;
+
   @include mq("md") {
     text-align: left;
   }

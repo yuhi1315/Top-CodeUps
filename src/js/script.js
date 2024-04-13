@@ -45,9 +45,16 @@ jQuery(function ($) {
 
   $(function () {
     $(".js-hamburger,.js-sp-nav").click(function () {
-      $(".js-hamburger").toggleClass("is-active");
       $(".js-header").toggleClass("is-active");
       $(".js-sp-nav").fadeToggle(500);
+      $(".js-hamburger").toggleClass("is-active");
+      if ($("body").css("overflow") === "hidden") {
+        // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+        $("body").css({ height: "", overflow: "" });
+      } else {
+        // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+        $("body").css({ height: "100%", overflow: "hidden" });
+      }
     });
   });
   $(window).resize(function () {
@@ -61,6 +68,8 @@ jQuery(function ($) {
     $(".js-hamburger").removeClass("is-active");
   }
   const mv__swiper = new Swiper(".mv__swiper", {
+    effect: "fade",
+
     loop: true,
     autoplay: {
       delay: 0,

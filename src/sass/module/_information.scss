@@ -5,8 +5,9 @@
 }
 
 .information__container {
+  margin-top: rem(28);
   @include mq("md") {
-    margin-top: rem(10);
+    margin-top: rem(38);
     display: flex;
     align-items: center;
   }
@@ -14,7 +15,6 @@
 
 .information__img {
   position: relative;
-  margin-top: rem(28);
   width: 100%;
 }
 

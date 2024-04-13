@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
   height: inherit;
+  gap: rem(40);
 }
 
 .pc-nav__item,
@@ -33,8 +34,6 @@
   align-items: center;
   justify-content: center;
   color: $white;
-  padding-left: rem(20);
-  padding-right: rem(20);
   text-align: center;
   position: relative;
 }
@@ -48,8 +47,7 @@
   content: "";
   position: absolute;
   bottom: rem(20);
-  left: rem(20);
-  width: calc(100% - rem(40));
+  width: calc(100%);
   height: rem(2);
   background: $white;
   transition: all 0.3s;

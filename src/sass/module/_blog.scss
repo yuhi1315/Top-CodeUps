@@ -19,18 +19,14 @@
   filter: brightness(0) invert(1);
   position: absolute;
   top: rem(-72);
-  left: rem(-56);
+  left: calc(50% - min(49vw, rem(620)));
   width: rem(437);
   height: rem(201);
 }
-.blog-cards {
+
+.blog__list {
   margin-top: rem(27);
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  column-gap: rem(40);
-  row-gap: rem(40);
   @include mq("md") {
-    grid-template-columns: repeat(3, 1fr);
     margin: rem(80) 0 0;
   }
 }

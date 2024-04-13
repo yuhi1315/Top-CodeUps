@@ -10,7 +10,7 @@
 .voice__icon-fish {
   position: absolute;
   top: rem(-120);
-  left: rem(-56);
+  left: calc(50% - min(50vw, rem(620)));
   width: rem(301);
   height: rem(138);
 }
