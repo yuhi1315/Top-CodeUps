@@ -1,6 +1,6 @@
 jQuery(function ($) {
-  // この中であればWordpressでも「$」が使用可能になる
-  $(function () {
+  // ページトップスクロールを制御する関数
+  function handlePageTopScroll() {
     const pageTop = $(".js-page-top");
     pageTop.hide();
     $(window).scroll(function () {
@@ -9,16 +9,16 @@ jQuery(function ($) {
       } else {
         pageTop.fadeOut();
       }
-      const scrollHeight = $(document).height(); /*ページ全体の高さ*/
+      const scrollHeight = $(document).height(); /* ページ全体の高さ */
       const scrollPosition =
         $(window).height() +
-        $(window).scrollTop(); /*ページの一番上からスクロールされた距離*/
+        $(window).scrollTop(); /* ページの一番上からスクロールされた距離 */
       const footerPaddingTop = parseInt($("footer").css("padding-top"));
       const footerPaddingBottom = parseInt($("footer").css("padding-bottom"));
       const footHeight =
         $("footer").height() +
         footerPaddingTop +
-        footerPaddingBottom; /*フッターの高さ*/
+        footerPaddingBottom; /* フッターの高さ */
 
       if (scrollHeight - scrollPosition <= footHeight) {
         $(".top-scroll").css({
@@ -41,35 +41,43 @@ jQuery(function ($) {
       );
       return false;
     });
-  });
+  }
 
-  $(function () {
+  // ハンバーガーメニューを制御する関数
+  function handleHamburgerMenu() {
     $(".js-hamburger,.js-sp-nav").click(function () {
       $(".js-header").toggleClass("is-active");
       $(".js-sp-nav").fadeToggle(500);
       $(".js-hamburger").toggleClass("is-active");
       if ($("body").css("overflow") === "hidden") {
-        // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+        // もし overflow が hidden なら、body のスタイルを元に戻す
         $("body").css({ height: "", overflow: "" });
       } else {
-        // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+        // そうでなければ、body に height: 100% と overflow: hidden を設定し、スクロールを無効にする
         $("body").css({ height: "100%", overflow: "hidden" });
       }
     });
-  });
-  $(window).resize(function () {
-    if (window.matchMedia("(min-width: 768px)").matches) {
-      closeDrawer();
-      $(".js-header").removeClass("is-active");
-    }
-  });
+  }
+
+  // ウィンドウリサイズ時の処理を制御する関数
+  function handleWindowResize() {
+    $(window).resize(function () {
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        closeDrawer();
+        $(".js-header").removeClass("is-active");
+      }
+    });
+  }
+
+  // ドロワーを閉じる関数
   function closeDrawer() {
     $(".js-sp-nav").fadeOut(500);
     $(".js-hamburger").removeClass("is-active");
   }
+
+  // Swiper の初期化
   const mv__swiper = new Swiper(".mv__swiper", {
     effect: "fade",
-
     loop: true,
     autoplay: {
       delay: 0,
@@ -84,6 +92,7 @@ jQuery(function ($) {
       prevEl: ".swiper-button-prev",
     },
   });
+
   const campaign__swiper = new Swiper(".campaign__swiper", {
     loop: true,
     loopAdditionalSlides: 2,
@@ -107,18 +116,15 @@ jQuery(function ($) {
         spaceBetween: 40,
       },
     },
-
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
 
-  //要素の取得とスピードの設定
+  // 画像のスクロールアニメーション
   var box = $(".js-imgBg-change"),
     speed = 700;
-
-  //画像のスクロールアニメーション
   box.each(function () {
     $(this).append('<div class="color"></div>');
     var color = $(this).find($(".color")),
@@ -127,7 +133,7 @@ jQuery(function ($) {
 
     image.css("opacity", "0");
     color.css("width", "0%");
-    //inviewを使って背景色が画面に現れたら処理をする
+    // inview を使って背景色が画面に現れたら処理をする
     color.on("inview", function () {
       if (counter == 0) {
         $(this)
@@ -141,4 +147,9 @@ jQuery(function ($) {
       }
     });
   });
+
+  // 各関数の実行
+  handlePageTopScroll();
+  handleHamburgerMenu();
+  handleWindowResize();
 });
