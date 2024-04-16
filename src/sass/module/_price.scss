@@ -8,6 +8,23 @@
   position: relative;
 }
 
+.price__inner::after {
+  display: none;
+  content: "";
+  background: url(../images/common/goldfish-logo.svg);
+  width: rem(437);
+  left: calc(50% - min(49vw, rem(620)));
+  bottom: rem(-41);
+  position: absolute;
+  z-index: 10;
+  background-size: contain;
+  aspect-ratio: 437 / 201;
+  transform: scale(-1, 1);
+  @include mq("md") {
+    display: block;
+  }
+}
+
 .price__icon {
   position: absolute;
   bottom: rem(-41);

@@ -7,6 +7,23 @@
   position: relative;
 }
 
+.about-us__inner::after {
+  display: none;
+  content: "";
+  background: url(../images/common/coral-anemone.svg);
+  width: rem(194);
+  height: rem(181);
+  right: calc(50% - min(48vw, rem(635)));
+  bottom: rem(-90);
+  position: absolute;
+  z-index: 10;
+  background-size: contain;
+  aspect-ratio: 194 / 181;
+  @include mq("md") {
+    display: block;
+  }
+}
+
 .about-us__img-container {
   position: relative;
   display: flex;
@@ -111,16 +128,4 @@
   @include mq("md") {
     margin-top: rem(40);
   }
-}
-
-.about-us__coral {
-  z-index: 10;
-  position: absolute;
-  right: calc(50% - min(48vw, rem(650)));
-  bottom: rem(-90);
-}
-
-.about-us__coral img {
-  width: rem(194);
-  height: rem(181);
 }

@@ -42,9 +42,6 @@
 
 .footer-nav__item {
   width: 100%;
-  @include mq("md") {
-    margin-top: rem(40);
-  }
 }
 
 .footer-nav__item:not(:first-child) {
