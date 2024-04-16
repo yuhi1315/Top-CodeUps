@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.hamburger {
+.header__hamburger {
   position: fixed;
   z-index: 9999;
   width: rem(32);
@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-.hamburger span {
+.header__hamburger span {
   position: absolute;
   left: 0;
   display: inline-block;
@@ -20,37 +20,32 @@
   transition: 0.3s transform, 0.3s background-color;
 }
 
-.hamburger span:nth-child(1) {
+.header__hamburger span:nth-child(1) {
   top: rem(28);
 }
 
-.hamburger span:nth-child(2) {
+.header__hamburger span:nth-child(2) {
   top: rem(40);
 }
 
-.hamburger span:nth-child(3) {
+.header__hamburger span:nth-child(3) {
   top: rem(52);
 }
 
-.hamburger.hamburger.is-active {
-  width: rem(32);
-  top: 0;
-}
-
-.hamburger.is-active span {
+.header__hamburger.is-active span {
   background-color: $white;
 }
 
-.hamburger.is-active span:nth-child(1) {
+.header__hamburger.is-active span:nth-child(1) {
   transform: rotate(-45deg);
   top: rem(35);
 }
 
-.hamburger.is-active span:nth-child(2) {
+.header__hamburger.is-active span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.is-active span:nth-child(3) {
+.header__hamburger.is-active span:nth-child(3) {
   top: rem(35);
   transform: rotate(45deg);
 }
