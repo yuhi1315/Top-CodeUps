@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.information__layout {
+.information-layout {
   padding: rem(80) 0 rem(75);
   margin-top: rem(65);
   @include mq("md") {

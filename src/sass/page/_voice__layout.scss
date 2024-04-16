@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.voice__layout {
+.voice-layout {
   margin-top: rem(75);
   @include mq("md") {
     margin-top: rem(145);
