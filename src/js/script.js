@@ -76,7 +76,7 @@ jQuery(function ($) {
   }
 
   // Swiper の初期化
-  const mv__swiper = new Swiper(".mv__swiper", {
+  const mv__swiper = new Swiper(".js-mv-swiper", {
     effect: "fade",
     loop: true,
     autoplay: {
@@ -93,7 +93,7 @@ jQuery(function ($) {
     },
   });
 
-  const campaign__swiper = new Swiper(".campaign__swiper", {
+  const campaign__swiper = new Swiper(".js-campaign__swiper", {
     loop: true,
     loopAdditionalSlides: 2,
     pagination: {

@@ -1,13 +1,13 @@
 @use "global" as *;
 
-.nav {
+.sp-nav {
   display: none;
   width: 100%;
   height: calc(100vh - rem(80));
   background-color: $green;
   overflow: scroll;
 }
-.nav__inner {
+.sp-nav__inner {
   display: flex;
   padding: 0 rem(15);
   justify-content: center;
@@ -17,7 +17,7 @@
   display: block;
 }
 
-.nav__items {
+.sp-nav__items {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -25,19 +25,19 @@
   width: 100%;
 }
 
-.nav__items:nth-child(2) {
+.sp-nav__items:nth-child(2) {
   margin-left: rem(7);
 }
 
-.nav__item {
+.sp-nav__item {
   width: 100%;
 }
 
-.nav__item:not(:first-child) {
+.sp-nav__item:not(:first-child) {
   margin-top: rem(16);
 }
 
-.nav__item a {
+.sp-nav__item a {
   text-align: left;
   display: block;
   padding: rem(12) 0;
@@ -47,12 +47,12 @@
   position: relative;
 }
 
-.nav__item a:first-child {
+.sp-nav__item a:first-child {
   font-weight: $bold;
   text-indent: -rem(22);
   padding-left: rem(16);
 }
-.nav__item a:first-child::before {
+.sp-nav__item a:first-child::before {
   position: absolute;
   left: -5px;
   bottom: rem(10);
@@ -66,7 +66,7 @@
   margin-right: rem(4);
 }
 
-.nav__item a:not(:first-child) {
+.sp-nav__item a:not(:first-child) {
   text-indent: -rem(16);
   padding-left: rem(16);
 }
