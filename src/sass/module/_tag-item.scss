@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.tag-item {
+  width: calc(50% - rem(21));
+  background-color: white;
+  @include mq("md") {
+    width: auto;
+  }
+}
+
+.tag-item:hover {
+  background-color: $green;
+}
+
+.tag-item a {
+  color: $white;
+  background-color: $green;
+  padding: rem(6) rem(69);
+  display: inline-block;
+  column-gap: 20px;
+}

@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.underlayer-mv {
+  width: 100%;
+  min-height: rem(320);
+  position: relative;
+}
+
+.underlayer-mv__title {
+  z-index: 888;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: $white;
+}
+
+.underlayer-mv__title-main {
+  font-family: $Lato;
+  font-size: rem(40);
+  font-weight: normal;
+  @include mq("md") {
+    font-size: rem(80);
+  }
+}

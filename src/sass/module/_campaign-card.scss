@@ -22,6 +22,12 @@
   }
 }
 
+.campaign-card__body.campaign-card__body--branch {
+  @include mq("md") {
+    padding: rem(24) rem(24) rem(50);
+  }
+}
+
 .campaign-card__top {
   padding-bottom: rem(4);
   border-bottom: rem(1) solid $green;
@@ -49,6 +55,11 @@
   @include mq("md") {
     margin-top: rem(11);
   }
+}
+
+.campaign-card__title.campaign-card__title--branch {
+  font-size: rem(24);
+  margin-top: rem(4);
 }
 
 .campaign-card__bottom {
@@ -101,5 +112,41 @@
   @include mq("md") {
     font-size: rem(40);
     margin-left: rem(24);
+  }
+}
+
+.campaign-card__explain {
+  font-size: rem(16);
+  margin-top: rem(24);
+  line-height: 1.5;
+  text-align: left;
+}
+
+.campaign-card__button-wrapper {
+  text-align: center;
+}
+
+.campaign-card__date {
+  display: inline-block;
+  font-family: $Lato;
+  color: $green;
+  font-size: rem(16);
+  line-height: 1.125;
+  font-weight: bold;
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+
+.campaign-card__button-message {
+  color: $green;
+  font-size: rem(14);
+  line-height: 1.286;
+  margin-top: rem(7);
+}
+
+.campaign-card__button {
+  @include mq("md") {
+    margin-top: rem(16);
   }
 }

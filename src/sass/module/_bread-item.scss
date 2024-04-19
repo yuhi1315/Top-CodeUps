@@ -1,0 +1,6 @@
+@use "global" as *;
+
+.bread-item:not(:first-child)::before {
+  content: ">";
+  padding: 0 rem(4);
+}

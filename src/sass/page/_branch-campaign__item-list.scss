@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.branch-campaign__item-list {
+  @include mq("md") {
+    margin-top: rem(178);
+  }
+}

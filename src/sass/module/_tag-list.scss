@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.tag-list {
+  display: flex;
+  gap: rem(21);
+  flex-wrap: wrap; /* 折返し指定 */
+  justify-content: center;
+  @include mq("md") {
+    gap: rem(32);
+    justify-content: flex-start;
+  }
+}
