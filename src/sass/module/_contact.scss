@@ -8,7 +8,6 @@
 }
 
 .contact__inner::after {
-  display: none;
   content: "";
   background: url(../images/common/goldfish-logo.svg);
   width: rem(109);
@@ -55,8 +54,8 @@
 }
 
 .contact__map {
-  border-right: rem(1) solid $green;
   @include mq("md") {
+    border-right: rem(1) solid $green;
     width: 47.931%;
     box-sizing: content-box;
     padding-right: rem(82);

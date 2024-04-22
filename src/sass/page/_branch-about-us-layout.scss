@@ -1,5 +1,8 @@
 @use "global" as *;
 
 .branch-about-us-layout {
-  margin-top: rem(230);
+  margin-top: rem(52);
+  @include mq("md") {
+    margin-top: rem(230);
+  }
 }

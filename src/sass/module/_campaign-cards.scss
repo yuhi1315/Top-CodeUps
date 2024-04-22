@@ -6,11 +6,12 @@
   column-gap: rem(40);
   row-gap: rem(40);
   padding: 0 rem(33);
-  margin-top: rem(40);
+  margin-top: rem(33);
   @include mq("md") {
     grid-template-columns: repeat(2, 1fr);
     column-gap: rem(40);
     padding: 0;
-    row-gap: rem(80);
+    row-gap: rem(72);
+    margin-top: rem(40);
   }
 }

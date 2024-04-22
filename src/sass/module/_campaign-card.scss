@@ -51,15 +51,17 @@
   font-size: rem(16);
   font-weight: 500;
   line-height: 1.5;
-  margin-top: rem(10);
+  margin-top: rem(4);
   @include mq("md") {
     margin-top: rem(11);
   }
 }
 
 .campaign-card__title.campaign-card__title--branch {
-  font-size: rem(24);
-  margin-top: rem(4);
+  @include mq("md") {
+    font-size: rem(24);
+    margin-top: rem(4);
+  }
 }
 
 .campaign-card__bottom {

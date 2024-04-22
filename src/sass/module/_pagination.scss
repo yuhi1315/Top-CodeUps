@@ -15,10 +15,25 @@
 
 .pagination p {
   border: 1px solid $green;
-  padding: rem(10) rem(14);
   color: $green;
   background-color: $white;
   transition: all 0.5s;
+}
+
+.pagination__number {
+  padding: rem(11) rem(15);
+}
+
+.pagination__number {
+  padding: rem(10) rem(14);
+}
+
+.pagination__preview {
+  padding: rem(10) rem(14);
+}
+
+.pagination__next {
+  padding: rem(10) rem(14);
 }
 
 .pagination p:hover {

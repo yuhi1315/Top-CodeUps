@@ -1,7 +1,14 @@
 @use "global" as *;
 
 .contact-layout {
-  margin-top: rem(80);
+  margin-top: rem(97);
+  @include mq("md") {
+    margin-top: rem(145);
+  }
+}
+
+.contact-layout.contact-layout--branch-about {
+  margin-top: rem(104);
   @include mq("md") {
     margin-top: rem(145);
   }

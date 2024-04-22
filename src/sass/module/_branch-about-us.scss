@@ -4,25 +4,43 @@
   position: relative;
 }
 
+.branch-about-us__bg::before {
+  content: "";
+  background: url(../images/common/goldfish-logo.svg);
+  width: rem(120);
+  left: calc(50% - min(46vw, rem(635)));
+  top: rem(-28);
+  position: absolute;
+  z-index: -1;
+  aspect-ratio: 120 / 55;
+  background-size: contain;
+  @include mq("md") {
+    display: block;
+    aspect-ratio: 301 / 138;
+    width: rem(301);
+    left: calc(50% - min(43vw, rem(635)));
+    top: rem(-153);
+  }
+}
+
 .branch-about-us__bg::after {
   display: none;
   content: "";
-  background: url(../images/common/coral-anemone.svg);
-  width: rem(194);
-  height: rem(181);
+  background: url(../images/common/goldfish-logo.svg);
+  width: rem(301);
   right: calc(50% - min(48vw, rem(635)));
-  bottom: rem(-90);
+  bottom: rem(-180);
   position: absolute;
   z-index: 10;
-  background-size: contain;
-  aspect-ratio: 194 / 181;
+  aspect-ratio: 301 / 138;
+  transform: scale(-1, 1);
   @include mq("md") {
     display: block;
   }
 }
 
 .branch-about-us__gallery {
-  margin-top: rem(40);
+  margin-top: rem(33);
   @include mq("md") {
     margin-top: rem(120);
   }

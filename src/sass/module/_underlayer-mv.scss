@@ -10,9 +10,12 @@
   z-index: 888;
   position: absolute;
   left: 50%;
-  top: 59%;
+  top: 50%;
   transform: translate(-50%, -50%);
   color: $white;
+  @include mq("md") {
+    top: 59%;
+  }
 }
 
 .underlayer-mv__title-main {

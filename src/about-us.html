@@ -61,13 +61,13 @@
           <div class="pc-nav__inner">
             <ul class="pc-nav__items">
               <li class="pc-nav__item">
-                <a href="#campaign">
+                <a href="./campaign.html">
                   <p class="pc-nav__title">Campaign</p>
                   <span class="pc-nav__sub-title">キャンペーン</span>
                 </a>
               </li>
               <li class="pc-nav__item">
-                <a href="#about-us">
+                <a href="./about-us.html">
                   <p class="pc-nav__title">About us</p>
                   <span class="pc-nav__sub-title">私たちについて</span>
                 </a>
@@ -176,7 +176,10 @@
               srcset="./assets/images/common/about-us-mv-sp.jpg"
               media="(max-width: 640px)"
             />
-            <img src="./assets/images/common/about-us-mv-pc.jpg" alt="" />
+            <img
+              src="./assets/images/common/about-us-mv-pc.jpg"
+              alt="青い空とシーサーの画像"
+            />
           </picture>
         </div>
         <div class="underlayer-mv__title">
@@ -198,21 +201,29 @@
         <div class="branch-about-us__inner inner">
           <div class="branch-about-us__bg">
             <div class="branch-about-us__content about-us">
-              <div class="about-us__img-container">
-                <div class="about-us__img-left">
-                  <img
-                    src="./assets/images/common/about-us-img1.jpg"
-                    alt="シーサが付いている沖縄の家の屋根の画像"
-                  />
+              <div class="about-us__container">
+                <div class="about-us__img-container">
+                  <div class="about-us__img-left md-show">
+                    <img
+                      src="./assets/images/common/about-us-img1.jpg"
+                      alt="シーサが付いている沖縄の家の屋根の画像"
+                    />
+                  </div>
+                  <div class="about-us__img-right about-us__img-right--branch">
+                    <img
+                      src="./assets/images/common/about-us-img2.jpg"
+                      alt="黄色い熱帯魚が泳いでいる海中の画像"
+                    />
+                  </div>
                 </div>
-                <div class="about-us__img-right">
-                  <img
-                    src="./assets/images/common/about-us-img2.jpg"
-                    alt="黄色い熱帯魚が泳いでいる海中の画像"
-                  />
+                <div class="about-us__catch-wrapper-branch md-none">
+                  <p class="about-us__catch">
+                    Dive into<br />
+                    the Ocean
+                  </p>
                 </div>
                 <div class="about-us__text-container">
-                  <div class="about-us__catch-wrapper">
+                  <div class="about-us__catch-wrapper md-show">
                     <p class="about-us__catch">
                       Dive into<br />
                       the Ocean
@@ -238,19 +249,19 @@
                 <div class="gallery__large">
                   <img
                     src="./assets/images/common/gallery-top-large.jpg"
-                    alt=""
+                    alt="海底に漂うたくさんの熱帯魚"
                     class="gallery__img js-modal-open"
                   />
                 </div>
                 <div class="gallery__small">
                   <img
                     src="./assets/images/common/gallery-top-small1.jpg"
-                    alt=""
+                    alt="砂浜に浮かぶ船"
                     class="gallery__img js-modal-open"
                   />
                   <img
                     src="./assets/images/common/gallery-top-small2.jpg"
-                    alt=""
+                    alt="海底を泳ぐ２匹の魚"
                     class="gallery__img js-modal-open"
                   />
                 </div>
@@ -259,19 +270,19 @@
                 <div class="gallery__small">
                   <img
                     src="./assets/images/common/gallery-bottom-small1.jpg"
-                    alt=""
+                    alt="海を泳ぐ黄色い魚"
                     class="gallery__img js-modal-open"
                   />
                   <img
                     src="./assets/images/common/gallery-bottom-small2.jpg"
-                    alt=""
+                    alt="海底を泳ぐたくさんの小魚"
                     class="gallery__img js-modal-open"
                   />
                 </div>
                 <div class="gallery__large">
                   <img
                     src="./assets/images/common/gallery-bottom-large.jpg"
-                    alt=""
+                    alt="海底を泳ぐ黄色い魚"
                     class="gallery__img js-modal-open"
                   />
                 </div>
@@ -289,7 +300,10 @@
       </div>
 
       <!-- contact -->
-      <section class="contact contact-layout" id="contact">
+      <section
+        class="contact contact-layout contact-layout--branch-about"
+        id="contact"
+      >
         <div class="contact__inner inner">
           <div class="contact__container">
             <div class="contact__map">
