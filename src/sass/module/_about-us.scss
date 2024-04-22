@@ -4,7 +4,6 @@
 }
 
 .about-us__inner {
-  position: relative;
 }
 
 .about-us__inner::after {
@@ -72,12 +71,13 @@
 .about-us__text-container {
   width: 100%;
   margin-top: rem(40);
+  align-items: center;
   @include mq("md") {
     max-width: rem(840);
     z-index: 10;
     position: absolute;
-    top: 52%;
-    left: 57%;
+    top: 33%;
+    left: 58%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;

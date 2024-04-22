@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(80);
+  gap: rem(12);
+  cursor: pointer;
+}
+
+.pagination :nth-child(2) {
+  background-color: $green;
+  color: $white;
+}
+
+.pagination p {
+  border: 1px solid $green;
+  padding: rem(10) rem(14);
+  color: $green;
+  background-color: $white;
+  transition: all 0.5s;
+}
+
+.pagination p:hover {
+  background-color: $green;
+  color: $white;
+}
+
+.pagination p:first-child {
+  margin-right: rem(40);
+}
+
+.pagination p:last-child {
+  margin-left: rem(40);
+}
