@@ -34,6 +34,7 @@
   z-index: 10;
   aspect-ratio: 301 / 138;
   transform: scale(-1, 1);
+  background-size: cover;
   @include mq("md") {
     display: block;
   }
@@ -51,9 +52,4 @@
   @include mq("md") {
     margin-top: rem(80);
   }
-}
-
-.modal__content img {
-  aspect-ratio: 920 / 586;
-  object-fit: cover;
 }

@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.modal {
+}
+.modal__content img {
+  aspect-ratio: 920 / 586;
+  object-fit: cover;
+}
