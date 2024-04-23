@@ -1,0 +1,97 @@
+@use "global" as *;
+
+.tab {
+  width: 100%;
+}
+
+.tab__list {
+  column-gap: rem(19);
+  display: flex;
+  @include mq("md") {
+    column-gap: rem(90);
+  }
+}
+
+.tab__button {
+  padding: rem(10) rem(15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: $pale-green;
+  color: $green;
+  @include mq("md") {
+    padding: rem(13) rem(26);
+  }
+}
+
+.tab__button img {
+  aspect-ratio: 64 / 64;
+  width: rem(64);
+}
+
+.tab__button p {
+  font-size: rem(14);
+  @include mq("md") {
+    margin-left: rem(8);
+    font-size: rem(24);
+  }
+}
+
+.tab__button.is-active {
+  color: #fff;
+  background-color: $green;
+}
+
+.tab__button.is-active img {
+  filter: brightness(0) invert(1);
+}
+
+.tab__button.is-active {
+  color: #fff;
+  background-color: $green;
+}
+
+.tab__contents {
+  margin-top: 20px;
+}
+
+.tab__content {
+  display: none;
+  padding: 24px;
+  border: 2px solid $green;
+}
+
+.tab__content-wrapper {
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.tab__title {
+  font-size: rem(24);
+  font-weight: $bold;
+  border-bottom: 1px solid $green;
+  line-height: 1;
+  padding-bottom: rem(8);
+}
+
+.tab__text {
+  font-size: rem(16);
+  line-height: 1.5;
+  margin-top: rem(8);
+}
+
+.tab__content.is-active {
+  display: block;
+}
+
+.tab__img {
+  aspect-ratio: 492 / 313;
+  width: rem(492);
+  margin-top: rem(8);
+  @include mq("md") {
+    margin-left: rem(28);
+    margin-top: 0;
+  }
+}
