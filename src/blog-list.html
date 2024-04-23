@@ -24,7 +24,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,16 +37,14 @@
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
     ></script>
-
     <script defer src="./assets/js/jquery.inview.min.js"></script>
-
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
     <div class="top-scroll js-page-top"></div>
     <header class="header js-header">
       <div class="header__inner">
-        <div class="header__name">
+        <h1 class="header__name">
           <a href="/index.html">
             <img
               src="./assets/images/common/CodeUps-logo.svg"
@@ -55,7 +52,7 @@
               class="header__logo"
             />
           </a>
-        </div>
+        </h1>
         <!-- pcナブ -->
         <nav class="header__pc-nav pc-nav js-pc-nav md-show">
           <div class="pc-nav__inner">
@@ -73,12 +70,11 @@
                 </a>
               </li>
               <li class="pc-nav__item">
-                <a href="#information">
+                <a href="./info.html">
                   <p class="pc-nav__title">Information</p>
                   <span class="pc-nav__sub-title">ダイビング情報</span>
                 </a>
               </li>
-
               <li class="pc-nav__item">
                 <a href="./blog-list.html">
                   <p class="pc-nav__title">Blog</p>
@@ -132,7 +128,7 @@
               <a href="./about-us.html">私たちについて</a>
             </li>
             <li class="sp-nav__item">
-              <a href="">ダイビング情報</a>
+              <a href="./info.html">ダイビング情報</a>
               <a href="">ライセンス講習</a>
               <a href="">体験ダイビング</a>
               <a href="">ファンダイビング</a>
@@ -173,129 +169,113 @@
         <div class="underlayer-mv__img">
           <picture>
             <source
-              srcset="./assets/images/common/about-us-mv-sp.jpg"
+              srcset="./assets/images/common/blog-list-mv-sp.jpg"
               media="(max-width: 640px)"
             />
             <img
-              src="./assets/images/common/about-us-mv-pc.jpg"
-              alt="青い空とシーサーの画像"
+              src="./assets/images/common/blog-list-mv-pc.jpg"
+              alt="小魚の群れ"
             />
           </picture>
         </div>
         <div class="underlayer-mv__title">
-          <h1 class="underlayer-mv__title-main">About us</h1>
+          <h2 class="underlayer-mv__title-main">Blog</h2>
         </div>
       </section>
       <!-- wp-パンくずリスト -->
       <div class="branch-campaign__bread">
         <ul class="bread-list inner">
           <li class="bread-list__item bread-item">
-            <a href="./index.html" class="bread-item__link">TOP</a>
+            <a href="" class="bread-item__link">TOP</a>
           </li>
           <li class="bread-item">
-            <a href="./about-us.html" class="bread-item__link"
-              >私たちについて</a
-            >
+            <a href="" class="bread-item__link">ダイビング情報</a>
           </li>
         </ul>
       </div>
-      <div class="branch-about-us branch-about-us-layout" id="about-us">
-        <div class="branch-about-us__inner inner">
-          <div class="branch-about-us__bg">
-            <div class="branch-about-us__content about-us">
-              <div class="about-us__container">
-                <div class="about-us__img-container">
-                  <div class="about-us__img-left md-show">
-                    <img
-                      src="./assets/images/common/about-us-img1.jpg"
-                      alt="シーサが付いている沖縄の家の屋根の画像"
-                    />
-                  </div>
-                  <div class="about-us__img-right about-us__img-right--branch">
-                    <img
-                      src="./assets/images/common/about-us-img2.jpg"
-                      alt="黄色い熱帯魚が泳いでいる海中の画像"
-                    />
-                  </div>
-                </div>
-                <div class="about-us__catch-wrapper-branch md-none">
-                  <p class="about-us__catch">
-                    Dive into<br />
-                    the Ocean
-                  </p>
-                </div>
-                <div class="about-us__text-container">
-                  <div class="about-us__catch-wrapper md-show">
-                    <p class="about-us__catch">
-                      Dive into<br />
-                      the Ocean
+      <!-- メインコンテンツ -->
+      <div class="branch-info branch-info-layout" id="info">
+        <div class="branch-info__inner inner">
+          <div class="branch-info__tab tab">
+            <div class="tab__list">
+              <button class="tab__button js-tab-button is-active">
+                <img
+                  src="./assets/images/common/info-wheal-logo.svg"
+                  alt="くじらのアイコン"
+                  class="md-show"
+                />
+                <p class="tab__button-text">
+                  ライセンス<br class="md-none" />講習
+                </p>
+              </button>
+              <button class="tab__button js-tab-button">
+                <img
+                  src="./assets/images/common/info-shark-logo.svg"
+                  alt="サメのアイコン"
+                  class="md-show"
+                />
+                <p class="tab__button-text">
+                  ファン<br class="md-none" />ダイビング
+                </p>
+              </button>
+              <button class="tab__button js-tab-button">
+                <img
+                  src="./assets/images/common/info-fish-logo.svg"
+                  alt="魚のアイコン"
+                  class="md-show"
+                />
+                <p class="tab__button-text">
+                  体験<br class="md-none" />ダイビング
+                </p>
+              </button>
+            </div>
+
+            <div class="tab__contents">
+              <div class="tab__content js-tab-content is-active">
+                <div class="tab__content-wrapper">
+                  <div class="tab__text-wrapper">
+                    <p class="tab__title">ライセンス講習</p>
+                    <p class="tab__text">
+                      泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！
                     </p>
                   </div>
-                  <div class="about-us__message-wrapper">
-                    <p class="about-us__message">
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                  <img
+                    src="./assets/images/common/info-img1.jpg"
+                    alt="ダイビングを楽しむ人たちの画像"
+                    class="tab__img"
+                  />
+                </div>
+              </div>
+              <div class="tab__content js-tab-content">
+                <div class="tab__content-wrapper">
+                  <div class="tab__text-wrapper">
+                    <p class="tab__title">ファンダイビング</p>
+                    <p class="tab__text">
+                      ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
                     </p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="branch-about-us__gallery">
-            <div class="branch-about-us__gallery section-header">
-              <h2 class="section-header__engtitle">Gallery</h2>
-              <p class="section-header__jatitle">フォト</p>
-            </div>
-            <div class="branch-about-us__gallery-content gallery">
-              <div class="gallery__wrapper">
-                <div class="gallery__large">
                   <img
-                    src="./assets/images/common/gallery-top-large.jpg"
-                    alt="海底に漂うたくさんの熱帯魚"
-                    class="gallery__img js-modal-open"
-                  />
-                </div>
-                <div class="gallery__small">
-                  <img
-                    src="./assets/images/common/gallery-top-small1.jpg"
-                    alt="砂浜に浮かぶ船"
-                    class="gallery__img js-modal-open"
-                  />
-                  <img
-                    src="./assets/images/common/gallery-top-small2.jpg"
-                    alt="海底を泳ぐ２匹の魚"
-                    class="gallery__img js-modal-open"
+                    src="./assets/images/common/info-img2.jpg"
+                    alt="ダイビングを楽しむ人たちの画像"
+                    class="tab__img"
                   />
                 </div>
               </div>
-              <div class="gallery__wrapper">
-                <div class="gallery__small">
+              <div class="tab__content js-tab-content">
+                <div class="tab__content-wrapper">
+                  <div class="tab__text-wrapper">
+                    <p class="tab__title">体験ダイビング</p>
+                    <p class="tab__text">
+                      ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
+                    </p>
+                  </div>
                   <img
-                    src="./assets/images/common/gallery-bottom-small1.jpg"
-                    alt="海を泳ぐ黄色い魚"
-                    class="gallery__img js-modal-open"
-                  />
-                  <img
-                    src="./assets/images/common/gallery-bottom-small2.jpg"
-                    alt="海底を泳ぐたくさんの小魚"
-                    class="gallery__img js-modal-open"
-                  />
-                </div>
-                <div class="gallery__large">
-                  <img
-                    src="./assets/images/common/gallery-bottom-large.jpg"
-                    alt="海底を泳ぐ黄色い魚"
-                    class="gallery__img js-modal-open"
+                    src="./assets/images/common/info-img3.jpg"
+                    alt="ダイビングを楽しむ人たちの画像"
+                    class="tab__img"
                   />
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <!-- 画像モーダルウィンドウ -->
-        <div class="branch-about-us__modal modal js-modal">
-          <div class="modal__container">
-            <div class="modal__content"></div>
           </div>
         </div>
       </div>
@@ -374,18 +354,18 @@
           <div class="footer-nav__container">
             <ul class="footer-nav__items">
               <li class="footer-nav__item">
-                <a href="">キャンペーン</a>
+                <a href="./campaign.html">キャンペーン</a>
                 <a href="">ライセンス取得</a>
                 <a href="">貸切体験ダイビング</a>
                 <a href="">ナイトダイビング</a>
               </li>
               <li class="footer-nav__item">
-                <a href="">私たちについて</a>
+                <a href="./about-us.html">私たちについて</a>
               </li>
             </ul>
             <ul class="footer-nav__items">
               <li class="footer-nav__item">
-                <a href="">ダイビング情報</a>
+                <a href="./info.html">ダイビング情報</a>
                 <a href="">ライセンス講習</a>
                 <a href="">体験ダイビング</a>
                 <a href="">ファンダイビング</a>
