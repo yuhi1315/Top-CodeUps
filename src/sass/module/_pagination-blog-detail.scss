@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.pagination-blog-detail {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.pagination-blog-detail__wrapper {
+  max-width: rem(158);
+  width: 100%;
+  gap: rem(82);
+  display: flex;
+  justify-content: space-between;
+  @include mq("md") {
+    margin-right: rem(25);
+  }
+}
+
+.pagination-blog-detail__preview,
+.pagination-blog-detail__next {
+  color: $green;
+  border: 1px solid $green;
+  padding: rem(6) rem(10);
+}
+
+.pagination-blog-detail__preview:hover,
+.pagination-blog-detail__next:hover {
+  background-color: $green;
+  color: $white;
+}
