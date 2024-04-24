@@ -38,3 +38,10 @@
     padding: 0;
   }
 }
+
+.branch-blog-list__pagination {
+  margin-top: rem(90);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}

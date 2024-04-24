@@ -2,13 +2,9 @@
 
 .pagination {
   display: flex;
-  margin-top: rem(90);
   cursor: pointer;
   justify-content: center;
   width: 100%;
-  @include mq("md") {
-    margin-top: rem(80);
-  }
 }
 
 .pagination__wrapper {

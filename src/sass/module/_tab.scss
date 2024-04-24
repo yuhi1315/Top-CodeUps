@@ -24,6 +24,12 @@
   }
 }
 
+.tab__button.tab__button--branch {
+  @include mq("md") {
+    padding: rem(6) rem(69);
+  }
+}
+
 .tab__button img {
   aspect-ratio: 64 / 64;
   width: rem(64);
@@ -37,6 +43,9 @@
   }
 }
 
+.tab__button.tab__button--branch p {
+  font-size: rem(14);
+}
 .tab__button.is-active {
   color: #fff;
   background-color: $green;
