@@ -2,15 +2,19 @@
 
 .pagination {
   display: flex;
-  justify-content: center;
-  margin-top: rem(80);
-  gap: rem(12);
+  margin-top: rem(90);
   cursor: pointer;
+  justify-content: center;
+  width: 100%;
+  @include mq("md") {
+    margin-top: rem(80);
+  }
 }
 
-.pagination :nth-child(2) {
-  background-color: $green;
-  color: $white;
+.pagination__wrapper {
+  display: flex;
+  gap: rem(12);
+  margin: 0 rem(40);
 }
 
 .pagination p {
@@ -39,12 +43,4 @@
 .pagination p:hover {
   background-color: $green;
   color: $white;
-}
-
-.pagination p:first-child {
-  margin-right: rem(40);
-}
-
-.pagination p:last-child {
-  margin-left: rem(40);
 }

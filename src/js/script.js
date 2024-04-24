@@ -184,3 +184,10 @@ $(function () {
     tabContent.eq(index).addClass("is-active");
   });
 });
+
+$(function () {
+  const archiveButton = $(".js-archive");
+  archiveButton.on("click", function () {
+    $(this).find("span").toggleClass("is-active");
+  });
+});

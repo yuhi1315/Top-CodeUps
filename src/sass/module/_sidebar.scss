@@ -1,0 +1,137 @@
+@use "global" as *;
+
+.sidebar__popular-list {
+  margin-top: rem(24);
+}
+
+.sidebar__title {
+  display: flex;
+  align-items: center;
+  border-left: 8px solid $green;
+}
+
+.sidebar__title img {
+  aspect-ratio: 50 / 50;
+  width: rem(50);
+  margin-left: rem(16);
+  filter: brightness(0);
+}
+
+.sidebar__title p {
+  margin-left: rem(8);
+  font-size: rem(24);
+}
+
+.sidebar__popular-item {
+  display: flex;
+  padding: rem(16);
+  box-shadow: rem(2) rem(2) rem(10) 0 #00000040;
+  margin-top: rem(24);
+}
+
+.sidebar__popular-text {
+  margin-left: rem(16);
+}
+
+.sidebar__popular-date {
+  font-size: rem(12);
+  vertical-align: top;
+  line-height: 1;
+}
+
+.sidebar__popular-title {
+  font-size: rem(16);
+  font-weight: 500;
+}
+
+.sidebar__popular-item img {
+  aspect-ratio: 121 / 90;
+  width: rem(121);
+}
+
+.sidebar__review {
+  margin-top: rem(80);
+}
+
+.sidebar__review-img {
+  margin-top: rem(24);
+}
+
+.sidebar__review-img img {
+  aspect-ratio: 294 / 218;
+  @include mq("md") {
+    width: rem(294);
+  }
+}
+
+.sidebar__review-age {
+  margin-top: rem(16);
+  font-size: rem(12);
+}
+
+.sidebar__review-title {
+  margin-top: rem(8);
+  font-size: rem(24);
+  font-weight: 500;
+}
+.sidebar__review-button {
+  text-align: center;
+  margin-top: rem(40);
+}
+
+.sidebar__campaign {
+  margin-top: rem(89);
+}
+
+.sidebar__campaign-item {
+  margin-top: rem(25);
+}
+
+.sidebar__campaign-card:not(:first-child) {
+  margin-top: rem(45);
+}
+
+.sidebar__campaign-button {
+  margin-top: rem(40);
+  text-align: center;
+}
+
+.sidebar__archive-year {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__archive-year p {
+  margin-left: rem(8);
+  font-size: rem(24);
+  color: $green;
+}
+
+.triangle {
+  display: block;
+  background: $green;
+  height: calc(tan(60deg) * 24px / 2);
+  width: 24px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.triangle.is-active {
+  display: block;
+  background: $green;
+  height: calc(tan(60deg) * 24px / 2);
+  width: 24px;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.sidebar__archive {
+  margin-top: rem(87);
+}
+.sidebar__archive-content {
+  margin-top: rem(24);
+}
+
+summary::-webkit-details-marker {
+  width: 10em; /* 幅 */
+  height: 10em; /* 高さ */
+  font-size: 15em; /* フォントサイズ */
+}
