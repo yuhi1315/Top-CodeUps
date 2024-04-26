@@ -109,6 +109,7 @@
 
 .contact__google-map iframe {
   aspect-ratio: 273 / 148;
+  width: rem(295);
   @include mq("md") {
     width: 100%;
   }

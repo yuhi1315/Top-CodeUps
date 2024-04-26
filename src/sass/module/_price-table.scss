@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.price-item {
+  width: 100%;
+  @include mq("md") {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.price-item__title {
+  flex-direction: row-reverse;
+  background-color: $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: rem(7) 0;
+  @include mq("md") {
+    flex-direction: column;
+    padding: rem(41) 0;
+    width: 28.744%;
+  }
+}
+
+.price-item__text {
+  color: $white;
+  font-size: rem(16);
+  font-weight: $bold;
+  margin-left: rem(8);
+  @include mq("md") {
+    margin-left: 0;
+  }
+}
+
+.price-item__img {
+  filter: brightness(0) invert(1);
+  aspect-ratio: 64 / 64;
+  width: rem(24);
+  @include mq("md") {
+    width: rem(64);
+    margin-top: rem(8);
+  }
+}
+
+.price-item__list {
+  border: rem(1) solid $green;
+}
+
+.price-item__item {
+  display: flex;
+}
+
+.price-item__item:not(:last-child) {
+  border-bottom: 1px solid $green;
+}
+
+.table__price {
+  font-size: rem(16);
+}
+
+.price-item__table {
+  border-collapse: collapse;
+}
+.price-item__table.price-item__table td {
+  border: 1px solid $green;
+  padding: rem(8) rem(16);
+  @include mq("md") {
+    padding: rem(18) rem(16) rem(16);
+  }
+}
