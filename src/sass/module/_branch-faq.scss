@@ -1,44 +1,31 @@
 @use "global" as *;
 
-.branch-price {
+.branch-faq__inner {
+  position: relative;
 }
 
-.branch-price__inner.inner {
+.branch-faq__inner.inner {
   max-width: rem(600);
 
   @include mq(md) {
     max-width: calc(rem(700) + $padding-pc * 2);
   }
 }
-
-.branch-price__inner {
-  position: relative;
-}
-
-.branch-price__inner::after {
+.branch-faq__inner::after {
   content: "";
   background: url(../images/common/goldfish-logo.svg);
   width: rem(120);
   left: calc(50% - min(46vw, rem(635)));
-  top: rem(-70);
+  top: rem(-25);
   position: absolute;
   z-index: -1;
   aspect-ratio: 120 / 55;
   background-size: contain;
   @include mq("md") {
+    top: rem(-70);
     display: block;
     aspect-ratio: 301 / 138;
     width: rem(301);
     left: calc(50% - min(43vw, rem(635)));
-  }
-}
-
-.branch-price__content {
-}
-
-.branch-price__item {
-  margin-top: rem(40);
-  @include mq("md") {
-    margin-top: rem(80);
   }
 }
