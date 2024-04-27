@@ -76,9 +76,7 @@ img:not([alt]) {
 }
 
 /* フォームリセット */
-input,
 button,
-select,
 textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -92,11 +90,6 @@ textarea {
 
 textarea {
   resize: vertical;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  display: none;
 }
 
 input[type="submit"],

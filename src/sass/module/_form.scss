@@ -1,0 +1,119 @@
+@use "global" as *;
+
+.form {
+  border-radius: 20px 0 0 0;
+}
+
+.form__item {
+  color: $black;
+  border-bottom: dotted; /*下線を点線にする*/
+  border-color: $green;
+  border-width: 1px;
+  padding-bottom: rem(40);
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.form__item dt {
+  font-size: rem(16);
+  line-height: 2;
+  font-weight: $bold;
+  @include mq("md") {
+    width: 39%;
+  }
+}
+.form__item dt span {
+  color: $white;
+  font-size: rem(12);
+  margin-left: rem(10);
+  background-color: #c94800;
+  padding: rem(3) rem(15);
+}
+
+.form__item:not(:first-child) {
+  margin-top: 20px;
+  @include mq("md") {
+    margin-top: 19px;
+  }
+}
+
+.form__input {
+  width: 100%;
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: 2px;
+    margin-left: 39px;
+  }
+}
+
+.form__input select {
+  width: 100%;
+}
+
+.form__label-text {
+  font-size: 14px;
+  width: rem(181);
+  font-weight: $medium;
+  line-height: 1.6;
+  color: $black;
+  @include mq("md") {
+    font-size: 14px;
+  }
+}
+
+input[type="radio"] {
+  transform: scale(0.8);
+  margin: 0;
+}
+
+// お問い合わせ内容
+
+.form__text {
+  text-align: left;
+  font-family: "Noto Sans JP";
+  font-size: 15px;
+  font-weight: $medium;
+  @include mq("md") {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+}
+
+.form__input-text,
+.form__textarea {
+  font-family: "Noto sans JP";
+  padding: 10px;
+  background-color: $white;
+  border: 1px solid $green;
+  font-size: 14px;
+  width: 100%;
+}
+
+.form__input-text::placeholder,
+.form__textarea::placeholder {
+  color: $black;
+  opacity: 0.5;
+}
+
+.form__textarea {
+  height: 171px;
+  resize: none;
+  margin-top: 10px;
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.form__approval {
+  margin-top: rem(80);
+  text-align: left;
+  @include mq("md") {
+    text-align: center;
+  }
+}
+
+.form__button {
+  text-align: center;
+  margin-top: rem(40);
+}
