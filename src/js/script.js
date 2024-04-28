@@ -228,15 +228,33 @@ function scrollToTab() {
   $("body,html").animate({ scrollTop: pos }, 500);
   return false;
 }
-if (location.hash) {
-  scrollToTab();
+function scrollToInfoTab() {
+  var pos = $(".tab__button").offset().top - $("header").height() - 30;
+  $("body,html").animate({ scrollTop: pos }, 500);
+  return false;
+}
+function scrollToPriceBlock(hash) {
+  const blockPos = $(hash).offset().top;
+  const scrollPos = blockPos - 100;
+  $("body,html").animate({ scrollTop: scrollPos }, 500);
+
+  return false;
+}
+if (location.hash.includes("tab_panel")) {
+  scrollToInfoTab();
   onLoadTabChange();
+}
+
+if (location.hash.includes("price")) {
+  // const index = location.hash.slice(7);
+  const hash = location.hash;
+  scrollToPriceBlock(hash);
 }
 
 window.addEventListener(
   "hashchange",
   function () {
-    scrollToTab();
+    scrollToInfoTab();
     onLoadTabChange();
   },
   false

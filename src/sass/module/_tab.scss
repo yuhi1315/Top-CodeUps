@@ -7,6 +7,7 @@
 .tab__list {
   column-gap: rem(19);
   display: flex;
+  justify-content: space-between;
   @include mq("md") {
     column-gap: rem(90);
   }
