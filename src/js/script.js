@@ -203,3 +203,41 @@ $(function () {
     $(this).next().slideToggle(300);
   });
 });
+
+function onLoadTabChange() {
+  const tabButton = $(".js-tab-button");
+  var hash = location.hash;
+  hash = (hash.match(/^#tab_panel-\d+$/) || [])[0];
+
+  if (hash !== undefined) {
+    var tabname = hash.slice(11);
+  } else {
+    var tabname = "tab_panel-1";
+  }
+  tabButton.removeClass("active");
+  var tabno = tabname - 1;
+
+  $(".tab__button").removeClass("is-active");
+  $(".tab__content").removeClass("is-active");
+  $(".tab__button").eq(tabno).addClass("is-active");
+  $(".tab__content").eq(tabno).addClass("is-active");
+}
+
+function scrollToTab() {
+  var pos = $(".tab__button").offset().top - $("header").height() - 30;
+  $("body,html").animate({ scrollTop: pos }, 500);
+  return false;
+}
+if (location.hash) {
+  scrollToTab();
+  onLoadTabChange();
+}
+
+window.addEventListener(
+  "hashchange",
+  function () {
+    scrollToTab();
+    onLoadTabChange();
+  },
+  false
+);

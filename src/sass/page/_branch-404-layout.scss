@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.branch-404-layout {
+  padding-top: rem(52);
+  @include mq("md") {
+    padding-top: rem(150);
+  }
+}
