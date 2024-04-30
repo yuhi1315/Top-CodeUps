@@ -1,5 +1,15 @@
 @use "global" as *;
 
+/*チェックボックスの指定*/
+$check-fz: rem(14); //フォントサイズ
+$check-size: rem(20); //外枠の幅高さ
+$check-bg-cr: #fff; //外枠の背景色
+$check-border-cr: #f00; //外枠の色
+$check-bg-cr-inner: #f00; //チェックマークの背景色
+$check-space: rem(5); //チェックマークと文字の距離
+$check-space-betweenRadio: rem(20); //ラジオボタンの間の距離
+$check-weight: 4px; //チェックマークの線の太さ(px)
+
 .form {
   border-radius: 20px 0 0 0;
 }
@@ -9,9 +19,10 @@
   border-bottom: dotted; /*下線を点線にする*/
   border-color: $green;
   border-width: 1px;
-  padding-bottom: rem(40);
+  padding-bottom: rem(22);
   @include mq("md") {
     display: flex;
+    padding-bottom: rem(40);
   }
 }
 
@@ -32,18 +43,28 @@
 }
 
 .form__item:not(:first-child) {
-  margin-top: 20px;
+  margin-top: rem(20);
   @include mq("md") {
-    margin-top: 19px;
+    margin-top: rem(33);
   }
 }
 
 .form__input {
   width: 100%;
-  margin-top: rem(16);
+  margin-top: rem(10);
   @include mq("md") {
     margin-top: 2px;
     margin-left: 39px;
+  }
+}
+
+.form__input.form__input--checkbox {
+  padding-left: rem(25);
+}
+
+.form__input.form__input--approval {
+  @include mq("md") {
+    margin-left: 0;
   }
 }
 
@@ -97,23 +118,112 @@ input[type="radio"] {
 }
 
 .form__textarea {
-  height: 171px;
+  height: rem(200);
   resize: none;
-  margin-top: 10px;
+  margin-top: rem(10);
   @include mq("md") {
     margin-top: 0;
+    height: rem(196);
   }
 }
 
 .form__approval {
-  margin-top: rem(80);
+  margin-top: rem(25);
   text-align: left;
+  max-width: rem(252);
+  width: 100%;
+  margin: 0 auto;
   @include mq("md") {
     text-align: center;
+    max-width: 100%;
+    margin-top: rem(80);
   }
 }
 
 .form__button {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(27);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+　input[type="checkbox"] {
+  display: none;
+}
+
+.form__label {
+  position: relative;
+}
+
+.form__label.form__label--approval {
+  font-size: rem(14);
+}
+
+.form__label:after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: rem(-23);
+  top: rem(15);
+  margin: -10px 0 0 -2px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid $green;
+}
+
+.form__label:hover:after {
+  border-color: #0171bd;
+}
+
+.form__label:after,
+.form__label:before {
+  position: absolute;
+  content: "";
+  display: block;
+}
+/*チェックマークの追加*/
+.form__label:before {
+  left: rem(-20);
+  top: rem(16);
+  margin-top: -7px;
+  width: rem(9);
+  height: rem(5);
+  border-bottom: rem(2) solid $red;
+  border-left: rem(2) solid $red;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + .form__label:before {
+  opacity: 1;
+}
+
+.form__input.form__input--select {
+  position: relative;
+}
+
+.form__input.form__input--select::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: rem(12) rem(6) 0 rem(6);
+  border-color: $green transparent transparent transparent;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.form__select-box {
+  width: 100%;
+  padding: rem(10) rem(8);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select-box__item::-ms-expand {
+  display: none;
 }

@@ -243,28 +243,29 @@
               </dl>
               <dl class="form__item">
                 <dt>お問合わせ項目 <span>必須</span></dt>
-                <dd class="form__input">
+                <dd class="form__input  form__input--checkbox">
                   <div class="form__check-box">
-                    <input type="checkbox" id="scales" name="scales" checked />
-                    <label for="scales">ダイビング講習について</label>
+                    <input type="checkbox" id="scales1" name="scales1" checked />
+                    <label for="scales1" class="form__label">ダイビング講習について</label>
                   </div>
                   <div class="form__check-box">
-                    <input type="checkbox" id="scales" name="scales" checked />
-                    <label for="scales">ファンデイビングについて</label>
+                    <input type="checkbox" id="scales2" name="scales2"  />
+                    <label for="scales2" class="form__label">ファンデイビングについて</label>
                   </div>
                   <div class="form__check-box">
-                    <input type="checkbox" id="scales" name="scales" checked />
-                    <label for="scales">体験ダイビングについて</label>
+                    <input type="checkbox" id="scales3" name="scales3"  />
+                    <label for="scales3" class="form__label">体験ダイビングについて</label>
                   </div>
                 </dd>
               </dl>
               <dl class="form__item">
                 <dt>キャンペーン</dt>
-                <dd class="form__input">
-                  <select name="hoge">
+                <dd class="form__input form__input--select">
+                  <select name="hoge" class="form__select-box">
                     <option value="">キャンペーン内容を入力</option>
-                    <option value="option_1">Twitter</option>
-                    <option value="option_2">口コミ</option>
+                    <option value="option_1">ダイビング講習について</option>
+                    <option value="option_2">ファンデイビングについて</option>
+                    <option value="option_3">ダイビング講習について</option>
                   </select>
                 </dd>
               </dl>
@@ -279,15 +280,15 @@
                 </dd>
               </dl>
             </div>
-            <dd class="form__input">
+            <dd class="form__input form__input--approval">
               <div class="form__approval">
-                <input type="checkbox" id="scales" name="scales" checked />
-                <label for="scales">個人情報の取り扱いについて同意のうえ送信します。</label>
+                <input type="checkbox" id="scales" name="scales" />
+                <label for="scales" class="form__label form__label--approval">個人情報の取り扱いについて同意のうえ送信します。</label>
               </div>
             </dd>
             <div class="form__button">
               <a href="" class="button" type="submit">
-                View more
+                Send
                 <span></span>
               </a>              <!-- <input type="submit" class="button" value="送信" > -->
           </input>
@@ -320,62 +321,63 @@
             />
           </div>
         </div>
-        <div class="footer__list footer-nav">
-          <div class="footer-nav__container">
-            <ul class="footer-nav__items">
-                   <li class="footer-nav__item">
+ <div class="footer__list grobal-nav">
+          <div class="grobal-nav__container">
+            <ul class="grobal-nav__items">
+              <li class="grobal-nav__item"">
                 <a href="./campaign.html">キャンペーン</a>
-                <a href="./campaign.html">ライセンス取得</a>
-                <a href="./campaign.html">貸切体験ダイビング</a>
-                <a href="./campaign.html">ナイトダイビング</a>
+                <a href="./info.html#tab_panel-1">ライセンス講習</a>
+                <a href="./info.html#tab_panel-2">貸切体験ダイビング</a>
+                <a href="./info.html#tab_panel-3">ナイトダイビング</a>
               </li>
-              <li class="footer-nav__item">
-                <a href="">私たちについて</a>
+              <li class="grobal-nav__item">
+                <a href="./about-us.html">私たちについて</a>
               </li>
             </ul>
-            <ul class="footer-nav__items">
-              <li class="footer-nav__item">
+            <ul class="grobal-nav__items">
+              <li class="grobal-nav__item">
                 <a href="./info.html">ダイビング情報</a>
                 <a href="./info.html#tab_panel-1">ライセンス講習</a>
                 <a href="./info.html#tab_panel-2">体験ダイビング</a>
                 <a href="./info.html#tab_panel-3">ファンダイビング</a>
               </li>
-              <li class="footer-nav__item">
-                <a href="./info.html">ブログ</a>
+              <li class="grobal-nav__item">
+                <a href="./blog-list.html">ブログ</a>
               </li>
             </ul>
           </div>
-          <div class="footer-nav__container">
-            <ul class="footer-nav__items">
-              <li class="footer-nav__item">
+          <div class="grobal-nav__container">
+            <ul class="grobal-nav__items">
+              <li class="grobal-nav__item">
                 <a href="./voice.html">お客様の声</a>
               </li>
-              <li class="footer-nav__item">
+              <li class="grobal-nav__item">
                 <a href="./price.html">料金一覧</a>
-                <a href="./price.html">ライセンス講習</a>
-                <a href="./price.html">体験ダイビング</a>
-                <a href="./price.html">ファンダイビング</a>
+                <a href="./price.html#price-1">ライセンス講習</a>
+                <a href="./price.html#price-2">体験ダイビング</a>
+                <a href="./price.html#price-3">ファンダイビング</a>
               </li>
             </ul>
-            <ul class="footer-nav__items">
-              <li class="footer-nav__item">
+            <ul class="grobal-nav__items">
+              <li class="grobal-nav__item">
                 <a href="./faq.html">よくある質問</a>
               </li>
-              <li class="footer-nav__item">
+              <li class="grobal-nav__item">
                 <a href="./privacy.html">プライバシー<br class="md-none" />ポリシー</a>
               </li>
-                <li class="footer-nav__item">
+              <li class="grobal-nav__item">
                 <a href="./terms.html">利用規約</a>
               </li>
-              <li class="footer-nav__item">
+              <li class="grobal-nav__item">
                 <a href="./sitemap.html">サイトマップ</a>
               </li>
-              <li class="footer-nav__item">
+              <li class="grobal-nav__item">
                 <a href="./contact.html">お問い合わせ</a>
               </li>
             </ul>
           </div>
         </div>
+
       </div>
       <p class="footer__copy-right">
         Copyright © 2021 - 2023 CodeUps LLC. All Rights Reserved.

@@ -1,0 +1,122 @@
+@use "global" as *;
+
+.grobal-nav {
+  display: flex;
+  @include mq("md") {
+    justify-content: center;
+  }
+}
+
+.grobal-nav.is-active {
+  display: block;
+}
+
+.grobal-nav__container {
+  display: block;
+  @include mq("md") {
+    display: flex;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.grobal-nav__container.grobal-nav__container--sitemap:nth-child(2) {
+  margin-left: rem(15);
+  @include mq("md") {
+    display: flex;
+    margin-left: rem(120);
+  }
+}
+
+.grobal-nav__container.grobal-nav__items--sitemap:nth-child(2) {
+  margin-left: rem(15);
+  @include mq("md") {
+    display: flex;
+    margin-left: rem(30);
+    padding-left: rem(52);
+  }
+}
+
+.grobal-nav__items {
+  color: red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.grobal-nav__items:not(:first-child) {
+  @include mq("md") {
+    margin-left: rem(32);
+  }
+}
+
+.grobal-nav__items.grobal-nav__items--sitemap:not(:first-child) {
+  @include mq("md") {
+    margin-left: rem(100);
+  }
+}
+
+.grobal-nav__items:nth-child(2) {
+  margin-top: rem(17);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.grobal-nav__item {
+  width: 100%;
+}
+
+.grobal-nav__item:not(:first-child) {
+  margin-top: rem(16);
+}
+
+.grobal-nav__item a {
+  text-align: left;
+  display: block;
+  padding: rem(12) 0;
+  color: $white;
+  font-size: rem(16);
+  line-height: 1.125;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+.grobal-nav__item.grobal-nav__item--sitemap a {
+  color: $black;
+}
+
+.grobal-nav__item a:hover {
+  opacity: 0.7;
+}
+
+.grobal-nav__item a:first-child {
+  font-weight: $bold;
+  text-indent: -rem(22);
+  padding-left: rem(22);
+}
+.grobal-nav__item a:first-child::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  background-image: url(../images/common/starfish.svg);
+  display: inline-block;
+  height: rem(18);
+  width: rem(18);
+  width: 1rem;
+  vertical-align: middle;
+  margin-right: rem(4);
+}
+
+.grobal-nav__item.grobal-nav__item--sitemap a:first-child::before {
+  filter: brightness(0.1);
+}
+
+.grobal-nav__item a:not(:first-child) {
+  text-indent: -rem(22);
+  padding-left: rem(22);
+}

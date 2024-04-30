@@ -11,7 +11,8 @@
 
 .footer-layout.footer-layout--404 {
   margin-top: 0;
+  padding-top: rem(96);
   @include mq("md") {
-    margin-top: 0;
+    padding: rem(238) 0 rem(80);
   }
 }

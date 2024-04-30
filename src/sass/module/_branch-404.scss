@@ -8,6 +8,29 @@
   position: relative;
 }
 
+.branch-404__bread {
+  position: absolute;
+  top: rem(-76);
+  color: $white;
+  @include mq("md") {
+    top: rem(-145);
+  }
+}
+
+.branch-404__inner::after {
+  content: "";
+  position: absolute;
+  background: url(../images/common/wheal.svg);
+  background-size: cover;
+  aspect-ratio: 698 / 698;
+  width: rem(328);
+  top: rem(-70);
+  @include mq("md") {
+    width: rem(698);
+    top: rem(-125);
+  }
+}
+
 .branch-404__wrapper {
   width: 100%;
   align-items: center;
@@ -28,13 +51,18 @@
 
 .branch-404__text {
   color: $white;
-  margin: rem(24);
   font-size: rem(16);
   text-align: center;
+  @include mq("md") {
+    margin: rem(24);
+  }
 }
 
 .branch-404__button {
-  margin-top: rem(40);
+  margin-top: rem(39);
+  @include mq("md") {
+    margin-top: rem(55);
+  }
 }
 
 .button {
