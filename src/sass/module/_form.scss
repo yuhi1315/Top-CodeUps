@@ -1,15 +1,5 @@
 @use "global" as *;
 
-/*チェックボックスの指定*/
-$check-fz: rem(14); //フォントサイズ
-$check-size: rem(20); //外枠の幅高さ
-$check-bg-cr: #fff; //外枠の背景色
-$check-border-cr: #f00; //外枠の色
-$check-bg-cr-inner: #f00; //チェックマークの背景色
-$check-space: rem(5); //チェックマークと文字の距離
-$check-space-betweenRadio: rem(20); //ラジオボタンの間の距離
-$check-weight: 4px; //チェックマークの線の太さ(px)
-
 .form {
   border-radius: 20px 0 0 0;
 }
@@ -113,7 +103,7 @@ input[type="radio"] {
 
 .form__input-text::placeholder,
 .form__textarea::placeholder {
-  color: $black;
+  color: #ddf0f1;
   opacity: 0.5;
 }
 
@@ -226,4 +216,8 @@ input[type="checkbox"]:checked + .form__label:before {
 
 .select-box__item::-ms-expand {
   display: none;
+}
+
+::placeholder {
+  color: red;
 }

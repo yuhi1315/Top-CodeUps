@@ -190,7 +190,7 @@
         </div>
       </section>
       <!-- wp-パンくずリスト -->
-        <div class="branch-info__bread bread">
+      <div class="branch-info__bread bread">
         <ul class="bread__list inner">
           <li class="bread__item">
             <a href="./index.html" class="bread__link">TOP</a>
@@ -205,7 +205,7 @@
         <div class="branch-info__inner inner">
           <div class="branch-info__tab tab">
             <div class="tab__list">
-              <button class="tab__button js-tab-button is-active">
+              <div class="tab__button js-tab-button is-active">
                 <img
                   src="./assets/images/common/info-wheal-logo.svg"
                   alt="くじらのアイコン"
@@ -214,8 +214,8 @@
                 <p class="tab__button-text">
                   ライセンス<br class="md-none" />講習
                 </p>
-              </button>
-              <button class="tab__button js-tab-button">
+              </div>
+              <div class="tab__button js-tab-button">
                 <img
                   src="./assets/images/common/info-shark-logo.svg"
                   alt="サメのアイコン"
@@ -224,8 +224,8 @@
                 <p class="tab__button-text">
                   ファン<br class="md-none" />ダイビング
                 </p>
-              </button>
-              <button class="tab__button js-tab-button">
+              </div>
+              <div class="tab__button js-tab-button">
                 <img
                   src="./assets/images/common/info-fish-logo.svg"
                   alt="魚のアイコン"
@@ -234,11 +234,14 @@
                 <p class="tab__button-text">
                   体験<br class="md-none" />ダイビング
                 </p>
-              </button>
+              </div>
             </div>
 
             <div class="tab__contents">
-              <div id="tab_panel-1" class="tab__content js-tab-content is-active" >
+              <div
+                id="tab_panel-1"
+                class="tab__content js-tab-content is-active"
+              >
                 <div class="tab__content-wrapper">
                   <div class="tab__text-wrapper">
                     <p class="tab__title">ライセンス講習</p>
@@ -253,7 +256,7 @@
                   />
                 </div>
               </div>
-              <div  id="tab_panel-2" class="tab__content js-tab-content">
+              <div id="tab_panel-2" class="tab__content js-tab-content">
                 <div class="tab__content-wrapper">
                   <div class="tab__text-wrapper">
                     <p class="tab__title">ファンダイビング</p>
@@ -268,7 +271,7 @@
                   />
                 </div>
               </div>
-              <div  id="tab_panel-3" class="tab__content js-tab-content">
+              <div id="tab_panel-3" class="tab__content js-tab-content">
                 <div class="tab__content-wrapper">
                   <div class="tab__text-wrapper">
                     <p class="tab__title">体験ダイビング</p>
@@ -283,10 +286,10 @@
                   />
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
-
       <!-- contact -->
       <section
         class="contact contact-layout contact-layout--branch-about"
@@ -357,10 +360,10 @@
             />
           </div>
         </div>
- <div class="footer__list grobal-nav">
+        <div class="footer__list grobal-nav">
           <div class="grobal-nav__container">
             <ul class="grobal-nav__items">
-              <li class="grobal-nav__item"">
+              <li class="grobal-nav__item">
                 <a href="./campaign.html">キャンペーン</a>
                 <a href="./info.html#tab_panel-1">ライセンス講習</a>
                 <a href="./info.html#tab_panel-2">貸切体験ダイビング</a>
@@ -399,7 +402,9 @@
                 <a href="./faq.html">よくある質問</a>
               </li>
               <li class="grobal-nav__item">
-                <a href="./privacy.html">プライバシー<br class="md-none" />ポリシー</a>
+                <a href="./privacy.html"
+                  >プライバシー<br class="md-none" />ポリシー</a
+                >
               </li>
               <li class="grobal-nav__item">
                 <a href="./terms.html">利用規約</a>
@@ -413,7 +418,6 @@
             </ul>
           </div>
         </div>
-   
       </div>
       <p class="footer__copy-right">
         Copyright © 2021 - 2023 CodeUps LLC. All Rights Reserved.

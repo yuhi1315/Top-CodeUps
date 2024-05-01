@@ -153,6 +153,7 @@ jQuery(function ($) {
   handleHamburgerMenu();
   handleWindowResize();
 });
+
 $(function () {
   const open = $(".js-modal-open"),
     close = $(".js-modal__close"),
@@ -172,6 +173,7 @@ $(function () {
   });
 });
 
+//informationでタブボタンを押した時の挙動
 $(function () {
   const tabButton = $(".js-tab-button"),
     tabContent = $(".js-tab-content");
@@ -185,13 +187,7 @@ $(function () {
   });
 });
 
-$(function () {
-  const archiveButton = $(".js-archive");
-  archiveButton.on("click", function () {
-    $(this).find("span").toggleClass("is-active");
-  });
-});
-
+//FAQのアコーディオンメニュー
 $(function () {
   $(".js-accordion__item:first-child .js-accordion__content").css(
     "display",
@@ -203,7 +199,7 @@ $(function () {
     $(this).next().slideToggle(300);
   });
 });
-
+//infoへのタブ遷移時の挙動
 function onLoadTabChange() {
   const tabButton = $(".js-tab-button");
   var hash = location.hash;
@@ -223,19 +219,27 @@ function onLoadTabChange() {
   $(".tab__content").eq(tabno).addClass("is-active");
 }
 
+//price リンク遷移時に、タブ位置までスクロール
 function scrollToTab() {
-  var pos = $(".tab__button").offset().top - $("header").height() - 30;
+  const headerHeight = $("header").height();
+  const targetPostion = $(".tab__button").offset().top;
+
+  var pos = targetPostion - headerHeight;
   $("body,html").animate({ scrollTop: pos }, 500);
   return false;
 }
+//info リンク遷移時に、タブ位置までスクロール
+
 function scrollToInfoTab() {
   var pos = $(".tab__button").offset().top - $("header").height() - 30;
   $("body,html").animate({ scrollTop: pos }, 500);
   return false;
 }
 function scrollToPriceBlock(hash) {
+  const headerHeight = $("header").height();
   const blockPos = $(hash).offset().top;
-  const scrollPos = blockPos - 100;
+  const scrollPos = blockPos - headerHeight;
+
   $("body,html").animate({ scrollTop: scrollPos }, 500);
 
   return false;
@@ -246,7 +250,6 @@ if (location.hash.includes("tab_panel")) {
 }
 
 if (location.hash.includes("price")) {
-  // const index = location.hash.slice(7);
   const hash = location.hash;
   scrollToPriceBlock(hash);
 }
@@ -254,8 +257,13 @@ if (location.hash.includes("price")) {
 window.addEventListener(
   "hashchange",
   function () {
-    scrollToInfoTab();
-    onLoadTabChange();
+    if (window.location.hash.includes("tab")) {
+      scrollToInfoTab();
+      onLoadTabChange();
+    } else {
+      const hash = location.hash;
+      scrollToPriceBlock(hash);
+    }
   },
   false
 );
