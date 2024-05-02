@@ -187,6 +187,18 @@ $(function () {
   });
 });
 
+//campaing/voiceでタブボタンを押した時の挙動
+$(function () {
+  const tagItem = $(".js-tag-item");
+  tagItem.on("click", function () {
+    let index = tagItem.index(this);
+
+    tagItem.removeClass("is-active");
+    tagItem.eq(index).addClass("is-active");
+    $(this).addClass("is-active");
+  });
+});
+
 //FAQのアコーディオンメニュー
 $(function () {
   $(".js-accordion__item:first-child .js-accordion__content").css(
@@ -197,6 +209,14 @@ $(function () {
   $(".js-accordion__title").on("click", function () {
     $(this).toggleClass("is-open");
     $(this).next().slideToggle(300);
+  });
+});
+
+//ページネーションの選択切り替え
+$(function () {
+  $(".js-pagination").on("click", function () {
+    $(".js-pagination").removeClass("is-active");
+    $(this).toggleClass("is-active");
   });
 });
 //infoへのタブ遷移時の挙動

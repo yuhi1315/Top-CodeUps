@@ -2,6 +2,10 @@
 
 .branch-campaign__item {
   position: relative;
+  margin-top: rem(33);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
 }
 
 .branch-campaign__item::after {

@@ -4,6 +4,17 @@
   width: 100%;
   min-height: rem(320);
   position: relative;
+  height: rem(460);
+  @include mq("md") {
+    height: rem(548);
+  }
+}
+
+.underlayer-mv img {
+  height: rem(460);
+  @include mq("md") {
+    height: rem(548);
+  }
 }
 
 .underlayer-mv__title {

@@ -13,19 +13,23 @@
   margin: 0 rem(40);
 }
 
-.pagination p {
+.pagination a {
   border: 1px solid $green;
   color: $green;
   background-color: $white;
   transition: all 0.5s;
+  font-size: rem(16);
+  font-weight: bold;
+  line-height: 1;
 }
 
 .pagination__number {
-  padding: rem(11) rem(15);
+  padding: rem(9.3) rem(13.3);
 }
 
-.pagination__number {
-  padding: rem(10) rem(14);
+.pagination__number.is-active {
+  background-color: $green;
+  color: $white;
 }
 
 .pagination__preview {
@@ -36,7 +40,7 @@
   padding: rem(10) rem(14);
 }
 
-.pagination p:hover {
+.pagination a:hover {
   background-color: $green;
   color: $white;
 }

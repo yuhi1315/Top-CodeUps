@@ -16,7 +16,7 @@
   right: calc(50% - min(48vw, rem(635)));
   bottom: rem(-90);
   position: absolute;
-  z-index: 10;
+  z-index: -1;
   background-size: contain;
   aspect-ratio: 194 / 181;
   @include mq("md") {
@@ -122,7 +122,7 @@
 
 .about-us__catch-wrapper-branch {
   position: absolute;
-  z-index: 10;
+  z-index: -1;
   top: 20px;
   left: 25px;
   color: $white;

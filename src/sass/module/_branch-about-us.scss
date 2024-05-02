@@ -31,7 +31,7 @@
   right: calc(50% - min(48vw, rem(635)));
   bottom: rem(-180);
   position: absolute;
-  z-index: 10;
+  z-index: -1;
   aspect-ratio: 301 / 138;
   transform: scale(-1, 1);
   background-size: cover;

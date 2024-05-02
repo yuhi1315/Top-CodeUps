@@ -22,7 +22,7 @@
   left: calc(50% - min(49vw, rem(620)));
   top: rem(-72);
   position: absolute;
-  z-index: 10;
+  z-index: -1;
   background-size: contain;
   aspect-ratio: 437 / 201;
   filter: brightness(0) invert(1);
