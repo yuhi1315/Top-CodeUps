@@ -1,12 +1,15 @@
 @use "global" as *;
 
+.table {
+  width: 72%;
+}
+
 .table__course {
   width: 70%;
   font-size: rem(16);
   text-align: center;
   @include mq("md") {
     text-align: left;
-    width: rem(340);
   }
 }
 

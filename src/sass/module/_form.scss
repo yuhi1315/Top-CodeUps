@@ -97,7 +97,7 @@ input[type="radio"] {
   padding: 10px;
   background-color: $white;
   border: 1px solid $green;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
 }
 
@@ -212,6 +212,7 @@ input[type="checkbox"]:checked + .form__label:before {
   padding: rem(10) rem(8);
   -webkit-appearance: none;
   appearance: none;
+  border: 1px solid $green;
 }
 
 .select-box__item::-ms-expand {

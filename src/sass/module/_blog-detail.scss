@@ -11,12 +11,12 @@ article > * + * {
 .blog-detail {
 }
 
-.blog-detail__date {
+.blog-detail time {
   font-size: rem(14);
   line-height: 1.285;
 }
 
-.blog-detail__title {
+.blog-detail h1 {
   border-bottom: 1px solid $green;
   line-height: 1.448;
   margin-top: rem(8);
@@ -29,33 +29,30 @@ article > * + * {
   }
 }
 
-.blog-detail__img {
+.blog-detail img {
   aspect-ratio: 700 / 468;
   @include mq("md") {
     width: rem(700);
   }
 }
 
-.blog-detail__text {
+.blog-detail p {
   font-size: rem(16);
   line-height: 1.5;
 }
 
-.blog-detail__list {
-}
-
-.blog-detail__item {
+.blog-detail li {
   position: relative;
   font-size: rem(16);
   line-height: 1.5;
-  text-indent: rem(31);
+  padding-left: rem(27);
 }
 
-.blog-detail__item:not(:first-child) {
+.blog-detail li:not(:first-child) {
   margin-top: rem(4);
 }
 
-.blog-detail__item::before {
+.blog-detail li::before {
   content: "";
   background-image: url(../images/common/blog-detail-starfish.svg);
   position: absolute;
