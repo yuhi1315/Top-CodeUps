@@ -1,9 +1,12 @@
 @use "global" as *;
 
+.bread {
+  margin-top: rem(7);
+}
+
 .bread__list {
   display: flex;
   font-size: rem(14);
-  margin-top: rem(7);
 }
 
 .bread__item:not(:first-child)::before {

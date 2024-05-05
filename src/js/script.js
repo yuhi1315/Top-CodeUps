@@ -219,7 +219,16 @@ $(function () {
     $(this).toggleClass("is-active");
   });
 });
-//infoへのタブ遷移時の挙動
+
+$(function () {
+  // $(".js-archive-month:first-child").css("display", "block");
+  $(".js-archive-year").on("click", function () {
+    $(this).toggleClass("is-open");
+    $(this).next().slideToggle(300);
+  });
+});
+//サイドバー：アーカイブの開閉アニメーション
+
 function onLoadTabChange() {
   const tabButton = $(".js-tab-button");
   var hash = location.hash;
@@ -264,6 +273,7 @@ function scrollToPriceBlock(hash) {
 
   return false;
 }
+
 if (location.hash.includes("tab_panel")) {
   scrollToInfoTab();
   onLoadTabChange();

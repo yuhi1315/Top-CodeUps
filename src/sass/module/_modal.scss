@@ -17,8 +17,11 @@
   background: rgba(0, 0, 0, 50%);
 }
 .modal__content img {
+  cursor: pointer;
   width: auto;
   height: auto;
   margin: 0 auto;
-  max-height: 75vw;
+  max-height: 50vw;
+  max-width: 71vw;
+  object-fit: contain;
 }

@@ -7,8 +7,57 @@
   cursor: pointer;
 }
 
+.archive__year {
+  position: relative;
+}
+
+.archive__year p {
+  padding-left: rem(30);
+}
+
+.archive__year::before {
+  position: absolute;
+  content: "";
+  top: 60%;
+  left: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: rem(19.1) rem(11) 0 rem(11);
+  border-color: $green transparent transparent transparent;
+  transform: translateY(-50%) rotate(0);
+  transition: 0.4s;
+}
+
+.archive__year.is-open::before {
+  transform: translateY(-50%) rotate(-90deg);
+}
+
 .archive__month {
-  text-indent: rem(30);
+  display: none;
+}
+
+.archive__month a {
+  padding-left: rem(58);
+  display: block;
+  position: relative;
+}
+
+.archive__month a::before {
+  position: absolute;
+  content: "";
+  top: 60%;
+  left: rem(30);
+  transform: translateY(-50%) rotate(135deg);
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: rem(19.1) rem(11) 0 rem(11);
+  border-color: $green transparent transparent transparent;
+  transform: translateY(-50%) rotate(-90deg);
+  transition: 0.4s;
 }
 
 .archive__title {

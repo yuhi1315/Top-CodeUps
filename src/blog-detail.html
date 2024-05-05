@@ -242,7 +242,7 @@
               </div>
             </article>
 
-            <aside class="branch-blog-detail__sidebar sidebar">
+            <aside class="branch-blog-list__sidebar sidebar">
               <!-- 人気記事 -->
               <div class="sidebar__popular">
                 <div class="sidebar__title">
@@ -250,7 +250,7 @@
                     src="./assets/images/common/info-wheal-logo.svg"
                     alt=""
                   />
-                  <p>人気記事</p>
+                  <h2>人気記事</h2>
                 </div>
                 <div class="sidebar__popular-list">
                   <a class="sidebar__popular-item" href="">
@@ -261,9 +261,7 @@
                       />
                     </div>
                     <div class="sidebar__popular-text">
-                      <time datetime="2023/11/17" class="sidebar__popular-date"
-                        >2023.11/17</time
-                      >
+                      <p class="sidebar__popular-date">2023.11/17</p>
                       <p class="sidebar__popular-title">ライセンス取得</p>
                     </div>
                   </a>
@@ -300,7 +298,7 @@
                     src="./assets/images/common/info-wheal-logo.svg"
                     alt=""
                   />
-                  <p>口コミ</p>
+                  <h2>口コミ</h2>
                 </div>
                 <div class="sidebar__review-item">
                   <div class="sidebar__review-img">
@@ -325,7 +323,7 @@
                     src="./assets/images/common/info-wheal-logo.svg"
                     alt=""
                   />
-                  <p>キャンペーン</p>
+                  <h2>キャンペーン</h2>
                 </div>
                 <div class="sidebar__campaign-item">
                   <a href="" class="sidebar__campaign-card campaign-card">
@@ -424,34 +422,25 @@
                     src="./assets/images/common/info-wheal-logo.svg"
                     alt=""
                   />
-                  <p>アーカイブ</p>
+                  <h2>アーカイブ</h2>
                 </div>
-                <div class="sidebar__archive-content">
-                  <details class="sidebar__archive-content archive">
-                    <summary>2023</summary>
-                    <details class="archive__month">
-                      <summary>3月</summary>
-                      <p class="archive__title">2023.11/17 ライセンス取得</p>
-                    </details>
-                    <details class="archive__month">
-                      <summary>2月</summary>
-                      <p class="archive__title">2023.11/17 ライセンス取得</p>
-                    </details>
-                    <details class="archive__month">
-                      <summary>1月</summary>
-                      <p class="archive__title">2023.11/17 ライセンス取得</p>
-                    </details>
-                  </details>
-                  <details class="archive">
-                    <summary>2022</summary>
-                    <details class="archive__month">
-                      <summary>3月</summary>
-                      <p class="archive__title">2023.11/17 ウミガメと泳ぐ</p>
-                    </details>
-                  </details>
+                <div class="sidebar__archive-content archive">
+                  <div class="archive__item">
+                    <div class="archive__year js-archive-year is-open">
+                      <p>2023</p>
+                    </div>
+                    <div class="archive__month js-archive-month">
+                      <a>3月</a>
+                      <a>2月</a>
+                      <a>1月</a>
+                    </div>
+                    <div class="archive__year js-archive-year is-open">
+                      <p>2022</p>
+                    </div>
+                  </div>
+                </div>
                 </div>
               </div>
-            </aside>
           </div>
         </div>
       </div>
