@@ -161,6 +161,11 @@ $(function () {
 
   //開くボタンをクリックしたらモーダルを表示する
   open.on("click", function () {
+    let index = open.index(this);
+    // 6n + 1 または 6n + 6 の場合
+    if ((index + 1) % 6 == 1 || (index + 1) % 6 == 0) {
+      $(".modal__content").addClass("is-large");
+    }
     modal.addClass("is-open");
     $(".modal__content").html($(this).prop("outerHTML"));
     $("html, body").css("overflow", "hidden");
@@ -169,6 +174,7 @@ $(function () {
   //閉じるボタンをクリックしたらモーダルを閉じる
   close.add(modal).on("click", function () {
     modal.removeClass("is-open");
+    $(".modal__content").removeClass("is-large");
     $("html, body").css("overflow", "");
   });
 });
@@ -184,18 +190,6 @@ $(function () {
     $(this).addClass("is-active");
     tabContent.removeClass("is-active");
     tabContent.eq(index).addClass("is-active");
-  });
-});
-
-//campaing/voiceでタブボタンを押した時の挙動
-$(function () {
-  const tagItem = $(".js-tag-item");
-  tagItem.on("click", function () {
-    let index = tagItem.index(this);
-
-    tagItem.removeClass("is-active");
-    tagItem.eq(index).addClass("is-active");
-    $(this).addClass("is-active");
   });
 });
 
