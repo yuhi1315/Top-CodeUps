@@ -33,7 +33,7 @@
   padding: 0 rem(22);
   @include mq("md") {
     margin-left: rem(80);
-    max-width: 294px;
+    max-width: rem(294);
     margin-top: 0;
     padding: 0;
   }

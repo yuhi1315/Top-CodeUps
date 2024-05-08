@@ -112,7 +112,7 @@
   display: block;
   background: $green;
   height: calc(tan(60deg) * 24px / 2);
-  width: 24px;
+  width: rem(24);
   clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
@@ -120,7 +120,7 @@
   display: block;
   background: $green;
   height: calc(tan(60deg) * 24px / 2);
-  width: 24px;
+  width: rem(24);
   clip-path: polygon(0 0, 100% 0, 50% 100%);
 }
 

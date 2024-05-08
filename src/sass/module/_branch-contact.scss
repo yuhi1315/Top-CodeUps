@@ -31,8 +31,8 @@
 }
 
 .contact__form__body {
-  margin-top: 60px;
+  margin-top: rem(60);
   @include mq("md") {
-    margin-top: 22px;
+    margin-top: rem(22);
   }
 }

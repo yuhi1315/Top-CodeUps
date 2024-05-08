@@ -1,14 +1,14 @@
 @use "global" as *;
 
 .form {
-  border-radius: 20px 0 0 0;
+  border-radius: rem(20) 0 0 0;
 }
 
 .form__item {
   color: $black;
   border-bottom: dotted; /*下線を点線にする*/
   border-color: $green;
-  border-width: 1px;
+  border-width: rem(1);
   padding-bottom: rem(22);
   @include mq("md") {
     display: flex;
@@ -43,8 +43,8 @@
   width: 100%;
   margin-top: rem(10);
   @include mq("md") {
-    margin-top: 2px;
-    margin-left: 39px;
+    margin-top: rem(2);
+    margin-left: rem(39);
   }
 }
 
@@ -63,14 +63,11 @@
 }
 
 .form__label-text {
-  font-size: 14px;
+  font-size: rem(14);
   width: rem(181);
   font-weight: $medium;
   line-height: 1.6;
   color: $black;
-  @include mq("md") {
-    font-size: 14px;
-  }
 }
 
 input[type="radio"] {
@@ -83,21 +80,21 @@ input[type="radio"] {
 .form__text {
   text-align: left;
   font-family: "Noto Sans JP";
-  font-size: 15px;
+  font-size: rem(15);
   font-weight: $medium;
   @include mq("md") {
-    margin-top: 4px;
-    font-size: 14px;
+    margin-top: rem(4);
+    font-size: rem(14);
   }
 }
 
 .form__input-text,
 .form__textarea {
   font-family: "Noto sans JP";
-  padding: 10px;
+  padding: rem(10);
   background-color: $white;
-  border: 1px solid $green;
-  font-size: 16px;
+  border: rem(1) solid $green;
+  font-size: rem(16);
   width: 100%;
 }
 
@@ -156,10 +153,10 @@ input[type="radio"] {
   display: block;
   left: rem(-23);
   top: rem(15);
-  margin: -10px 0 0 -2px;
-  width: 17px;
-  height: 17px;
-  border: 1px solid $green;
+  margin: rem(-10) 0 0 rem(-2);
+  width: rem(17);
+  height: rem(17);
+  border: rem(1) solid $green;
 }
 
 .form__label:hover:after {
@@ -176,7 +173,7 @@ input[type="radio"] {
 .form__label:before {
   left: rem(-20);
   top: rem(16);
-  margin-top: -7px;
+  margin-top: rem(-7);
   width: rem(9);
   height: rem(5);
   border-bottom: rem(2) solid $red;
@@ -202,7 +199,7 @@ input[type="checkbox"]:checked + .form__label:before {
   border-color: $green transparent transparent transparent;
   position: absolute;
   top: 50%;
-  right: 5px;
+  right: rem(5);
   transform: translateY(-50%);
   pointer-events: none;
 }
@@ -212,7 +209,7 @@ input[type="checkbox"]:checked + .form__label:before {
   padding: rem(10) rem(8);
   -webkit-appearance: none;
   appearance: none;
-  border: 1px solid $green;
+  border: rem(1) solid $green;
 }
 
 .select-box__item::-ms-expand {
