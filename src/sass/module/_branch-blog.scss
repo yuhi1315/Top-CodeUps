@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.branch-blog__wrapper {
+  padding: 0 rem(5);
+  position: relative;
+  @include mq("md") {
+    display: flex;
+    padding: 0;
+  }
+}
+
+.branch-blog__wrapper::before {
+  content: "";
+  background: url(../images/common/goldfish-branch-logo.svg);
+  width: rem(120);
+  left: calc(50% - min(46vw, rem(620)));
+  top: rem(-23);
+  position: absolute;
+  z-index: -1;
+  background-size: contain;
+  aspect-ratio: 301 / 138;
+  @include mq("md") {
+    display: block;
+    top: rem(-70);
+    left: calc(50% - min(49vw, rem(620)));
+    width: rem(301);
+  }
+}
+
+.branch-blog__sidebar {
+  margin-top: rem(80);
+  width: 100%;
+  padding: 0 rem(22);
+  @include mq("md") {
+    margin-left: rem(80);
+    max-width: 294px;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+
+.branch-blog__pagination {
+  margin-top: rem(90);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
